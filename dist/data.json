@@ -1,6 +1,6 @@
 {
   "version": "1.14.0",
-  "commit": "589ac8377d37c8e2e3cebfc719200defb948b640",
+  "commit": "38803229f46928d1805273148a267e18508b20c9",
   "spirits": {
     "gran": {
       "name": "グラン",
@@ -3583,6 +3583,7 @@
           "n": 40
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 1,
@@ -3706,6 +3707,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 1,
@@ -3856,6 +3858,7 @@
           "n": 70
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran"
       ],
@@ -4013,6 +4016,7 @@
           "n": 75
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy"
@@ -4174,6 +4178,7 @@
           "n": 60
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -4345,6 +4350,7 @@
           "n": 60
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -4488,6 +4494,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -4646,6 +4653,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -4805,6 +4813,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -4964,6 +4973,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -5122,6 +5132,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -5280,6 +5291,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -5454,6 +5466,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -5613,6 +5626,7 @@
           "n": 4
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -5786,6 +5800,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -5926,6 +5941,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran"
       ],
@@ -6069,6 +6085,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran"
       ],
@@ -6208,6 +6225,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran"
       ],
@@ -6354,6 +6372,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy"
@@ -6502,6 +6521,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -6646,6 +6666,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -6792,6 +6813,7 @@
           "n": 45
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -6934,6 +6956,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7080,6 +7103,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7222,6 +7246,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7368,6 +7393,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7510,6 +7536,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7656,6 +7683,7 @@
           "n": 80
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7798,6 +7826,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -7944,6 +7973,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8086,6 +8116,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8232,6 +8263,7 @@
           "n": 50
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8374,6 +8406,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8520,6 +8553,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8662,6 +8696,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8808,6 +8843,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -8950,6 +8986,7 @@
           "n": 30
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -9096,6 +9133,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -9239,6 +9277,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": true,
       "spirits": [
         "gran"
       ],
@@ -9391,6 +9430,7 @@
           "n": 35
         }
       ],
+      "companionsByStory": true,
       "spirits": [
         "gran"
       ],
@@ -9530,6 +9570,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -9676,6 +9717,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -9817,6 +9859,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 3,
@@ -9953,6 +9996,7 @@
           "n": 55
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 10,
@@ -10104,6 +10148,7 @@
           "n": 3
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 14,
@@ -10270,6 +10315,7 @@
           "n": 65
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 21,
@@ -10435,6 +10481,7 @@
           "type": "noItem"
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 1,
@@ -10556,6 +10603,7 @@
           "n": 10
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 3,
@@ -10691,6 +10739,7 @@
           "n": 50
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 4,
@@ -10824,6 +10873,7 @@
           "n": 50
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 5,
@@ -10956,6 +11006,7 @@
           "n": 12
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 6,
@@ -11104,6 +11155,7 @@
           "n": 60
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 8,
@@ -11245,6 +11297,7 @@
           "n": 12
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 9,
@@ -11393,6 +11446,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 11,
@@ -11550,6 +11604,7 @@
           "n": 13
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 13,
@@ -11689,6 +11744,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 15,
@@ -11846,6 +11902,7 @@
           "n": 60
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 17,
@@ -11997,6 +12054,7 @@
           "n": 55
         }
       ],
+      "companionsByStory": false,
       "tiers": {
         "gentle": {
           "level": 22,
@@ -12164,6 +12222,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -12338,6 +12397,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -12511,6 +12571,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -12684,6 +12745,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -12858,6 +12920,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13032,6 +13095,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13205,6 +13269,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13379,6 +13444,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13552,6 +13618,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13725,6 +13792,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -13899,6 +13967,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14073,6 +14142,7 @@
           "n": 2
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14246,6 +14316,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14333,6 +14404,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14420,6 +14492,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14507,6 +14580,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
@@ -14594,6 +14668,7 @@
           "type": "noDown"
         }
       ],
+      "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
