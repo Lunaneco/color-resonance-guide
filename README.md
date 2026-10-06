@@ -1,6 +1,6 @@
 # COLOR RESONANCE 解体新書
 
-ゲーム version 1.14.0（ソース commit `367342413c1923f169e59e335fa0caf1591bda89`）に対応した静的 Web アプリです。
+ゲーム version 1.14.0（ソース commit `589ac8377d37c8e2e3cebfc719200defb948b640`）に対応した静的 Web アプリです。
 
 - `dist/index.html`: 全75ステージ、難易度別報酬、36スキル、43装備、素材、ミニゲームを調べる攻略ページ。
 - `dist/story.html`: 本編9編、復興9編、交流2編の本文、選択肢、16ボスの戦闘会話を読む物語ページ。
