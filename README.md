@@ -7,7 +7,9 @@
 - `dist/data.json` と `dist/story-data.json`: 実際のゲーム定義から抽出したデータ。
 - `dist/media/`: ゲームで使用しているイラスト・アイテム画像。
 
-ビルドや外部ライブラリは不要です。`dist` を HTTP サーバーで配信してください。Sites の配信設定は `.openai/hosting.json` にあります。
+**公開ページ:** https://lunaneco.github.io/color-resonance-guide/ （攻略） / https://lunaneco.github.io/color-resonance-guide/story.html （物語）
+
+ビルドや外部ライブラリは不要です。`main` へ push すると `.github/workflows/pages.yml` が `dist` を GitHub Pages へ公開します。手元では `dist` を HTTP サーバーで配信してください。
 
 しおり、文字サイズ、攻略チェックリストは、このページを開いたブラウザだけに保存します。ゲームのセーブデータは操作しません。復興編やクリア後の情報は、表示設定を切り替えて閲覧できます。
 
