@@ -1,6 +1,6 @@
 {
-  "version": "1.14.0",
-  "commit": "38803229f46928d1805273148a267e18508b20c9",
+  "version": "1.18.0",
+  "commit": "3ef8823ec3c64611dcc643f8e1635a4415f2062a",
   "spirits": {
     "gran": {
       "name": "グラン",
@@ -38,8 +38,9 @@
       "target": "enemy",
       "range": 3,
       "power": 1.2,
+      "line": 1,
       "paint": 1,
-      "desc": "3マス先の敵へ必中の水矢。周り1マスを虹にする",
+      "desc": "3マス先の敵へ必中の水矢。威力1.2倍。貫いた向こう1マスも打ち、周り1マスを虹にする",
       "route": "enchant",
       "legacy": true,
       "levels": [
@@ -53,8 +54,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.2,
+          "line": 1,
           "paint": 1,
-          "desc": "3マス先の敵へ必中の水矢。周り1マスを虹にする",
+          "desc": "3マス先の敵へ必中の水矢。威力1.2倍。貫いた向こう1マスも打ち、周り1マスを虹にする",
           "route": "enchant",
           "legacy": true,
           "upgrade": 0
@@ -69,8 +71,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.344,
+          "line": 1,
           "paint": 1,
-          "desc": "3マス先の敵へ必中の水矢。周り1マスを虹にする（強化：威力+12%）",
+          "desc": "3マス先の敵へ必中の水矢。威力1.344倍。貫いた向こう1マスも打ち、周り1マスを虹にする（強化：威力+12%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 1
@@ -85,8 +88,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.488,
+          "line": 1,
           "paint": 1,
-          "desc": "3マス先の敵へ必中の水矢。周り1マスを虹にする（強化：威力+24%）",
+          "desc": "3マス先の敵へ必中の水矢。威力1.488倍。貫いた向こう1マスも打ち、周り1マスを虹にする（強化：威力+24%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 2
@@ -101,8 +105,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.632,
+          "line": 1,
           "paint": 1,
-          "desc": "3マス先の敵へ必中の水矢。周り1マスを虹にする（強化：威力+36%）",
+          "desc": "3マス先の敵へ必中の水矢。威力1.632倍。貫いた向こう1マスも打ち、周り1マスを虹にする（強化：威力+36%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 3
@@ -135,7 +140,7 @@
       "range": 3,
       "heal": 0.45,
       "paint": 1,
-      "desc": "3マス先までの味方を45%回復し、虹の床を広げる",
+      "desc": "3マス先までの味方一人を45%回復する。守りは付けず、届いた潮だけを返す",
       "route": "summon",
       "legacy": true,
       "levels": [
@@ -150,7 +155,7 @@
           "range": 3,
           "heal": 0.45,
           "paint": 1,
-          "desc": "3マス先までの味方を45%回復し、虹の床を広げる",
+          "desc": "3マス先までの味方一人を45%回復する。守りは付けず、届いた潮だけを返す",
           "route": "summon",
           "legacy": true,
           "upgrade": 0
@@ -166,7 +171,7 @@
           "range": 3,
           "heal": 0.5,
           "paint": 1,
-          "desc": "3マス先までの味方を50%回復し、虹の床を広げる（強化：回復50%）",
+          "desc": "3マス先までの味方一人を50%回復する。守りは付けず、届いた潮だけを返す（強化：回復50%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 1
@@ -182,7 +187,7 @@
           "range": 3,
           "heal": 0.55,
           "paint": 1,
-          "desc": "3マス先までの味方を55%回復し、虹の床を広げる（強化：回復55%）",
+          "desc": "3マス先までの味方一人を55%回復する。守りは付けず、届いた潮だけを返す（強化：回復55%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 2
@@ -198,7 +203,7 @@
           "range": 3,
           "heal": 0.6,
           "paint": 1,
-          "desc": "3マス先までの味方を60%回復し、虹の床を広げる（強化：回復60%）",
+          "desc": "3マス先までの味方一人を60%回復する。守りは付けず、届いた潮だけを返す（強化：回復60%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 3
@@ -231,8 +236,9 @@
       "range": 4,
       "radius": 1,
       "power": 1.55,
+      "push": true,
       "paint": 2,
-      "desc": "選んだ地点の周り1マスへ必中の大波。周り2マスを虹にする",
+      "desc": "選んだ地点の周り1マスへ必中の大波。威力1.55倍。敵を押し流し、周り2マスを虹にする",
       "route": "enchant",
       "legacy": true,
       "levels": [
@@ -247,8 +253,9 @@
           "range": 4,
           "radius": 1,
           "power": 1.55,
+          "push": true,
           "paint": 2,
-          "desc": "選んだ地点の周り1マスへ必中の大波。周り2マスを虹にする",
+          "desc": "選んだ地点の周り1マスへ必中の大波。威力1.55倍。敵を押し流し、周り2マスを虹にする",
           "route": "enchant",
           "legacy": true,
           "upgrade": 0
@@ -264,8 +271,9 @@
           "range": 4,
           "radius": 1,
           "power": 1.736,
+          "push": true,
           "paint": 2,
-          "desc": "選んだ地点の周り1マスへ必中の大波。周り2マスを虹にする（強化：威力+12%）",
+          "desc": "選んだ地点の周り1マスへ必中の大波。威力1.736倍。敵を押し流し、周り2マスを虹にする（強化：威力+12%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 1
@@ -281,8 +289,9 @@
           "range": 4,
           "radius": 1,
           "power": 1.922,
+          "push": true,
           "paint": 2,
-          "desc": "選んだ地点の周り1マスへ必中の大波。周り2マスを虹にする（強化：威力+24%）",
+          "desc": "選んだ地点の周り1マスへ必中の大波。威力1.922倍。敵を押し流し、周り2マスを虹にする（強化：威力+24%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 2
@@ -298,8 +307,9 @@
           "range": 4,
           "radius": 1,
           "power": 2.108,
+          "push": true,
           "paint": 2,
-          "desc": "選んだ地点の周り1マスへ必中の大波。周り2マスを虹にする（強化：威力+36%）",
+          "desc": "選んだ地点の周り1マスへ必中の大波。威力2.108倍。敵を押し流し、周り2マスを虹にする（強化：威力+36%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 3
@@ -333,7 +343,7 @@
       "power": 0.9,
       "root": 2,
       "paint": 0,
-      "desc": "3マス先の敵を攻撃し、2ターン移動を封じる",
+      "desc": "3マス先の敵一人を攻撃し、2ターン移動を封じる",
       "route": "enchant",
       "legacy": true,
       "levels": [
@@ -349,7 +359,7 @@
           "power": 0.9,
           "root": 2,
           "paint": 0,
-          "desc": "3マス先の敵を攻撃し、2ターン移動を封じる",
+          "desc": "3マス先の敵一人を攻撃し、2ターン移動を封じる",
           "route": "enchant",
           "legacy": true,
           "upgrade": 0
@@ -366,7 +376,7 @@
           "power": 1.008,
           "root": 2,
           "paint": 0,
-          "desc": "3マス先の敵を攻撃し、2ターン移動を封じる（強化：威力+12%・束縛2ターン）",
+          "desc": "3マス先の敵一人を攻撃し、2ターン移動を封じる（強化：威力+12%・束縛2ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 1
@@ -383,7 +393,7 @@
           "power": 1.116,
           "root": 2,
           "paint": 0,
-          "desc": "3マス先の敵を攻撃し、2ターン移動を封じる（強化：威力+24%・束縛2ターン）",
+          "desc": "3マス先の敵一人を攻撃し、2ターン移動を封じる（強化：威力+24%・束縛2ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 2
@@ -400,7 +410,7 @@
           "power": 1.224,
           "root": 3,
           "paint": 0,
-          "desc": "3マス先の敵を攻撃し、3ターン移動を封じる（強化：威力+36%・束縛3ターン）",
+          "desc": "3マス先の敵一人を攻撃し、3ターン移動を封じる（強化：威力+36%・束縛3ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 3
@@ -433,9 +443,9 @@
       "range": 2,
       "radius": 1,
       "heal": 0.3,
-      "guard": 2,
+      "cleanse": true,
       "paint": 1,
-      "desc": "選んだ味方と周り1マスの味方を30%回復し、2ターン守る",
+      "desc": "選んだ味方と周り1マスを30%回復し、絡んだ蔦をほどく",
       "route": "summon",
       "legacy": true,
       "levels": [
@@ -450,9 +460,9 @@
           "range": 2,
           "radius": 1,
           "heal": 0.3,
-          "guard": 2,
+          "cleanse": true,
           "paint": 1,
-          "desc": "選んだ味方と周り1マスの味方を30%回復し、2ターン守る",
+          "desc": "選んだ味方と周り1マスを30%回復し、絡んだ蔦をほどく",
           "route": "summon",
           "legacy": true,
           "upgrade": 0
@@ -468,9 +478,9 @@
           "range": 2,
           "radius": 1,
           "heal": 0.35,
-          "guard": 2,
+          "cleanse": true,
           "paint": 1,
-          "desc": "選んだ味方と周り1マスの味方を35%回復し、2ターン守る（強化：回復35%・守り2ターン）",
+          "desc": "選んだ味方と周り1マスを35%回復し、絡んだ蔦をほどく（強化：回復35%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 1
@@ -486,9 +496,9 @@
           "range": 2,
           "radius": 1,
           "heal": 0.4,
-          "guard": 3,
+          "cleanse": true,
           "paint": 1,
-          "desc": "選んだ味方と周り1マスの味方を40%回復し、3ターン守る（強化：回復40%・守り3ターン）",
+          "desc": "選んだ味方と周り1マスを40%回復し、絡んだ蔦をほどく（強化：回復40%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 2
@@ -504,9 +514,9 @@
           "range": 2,
           "radius": 1,
           "heal": 0.45,
-          "guard": 3,
+          "cleanse": true,
           "paint": 1,
-          "desc": "選んだ味方と周り1マスの味方を45%回復し、3ターン守る（強化：回復45%・守り3ターン）",
+          "desc": "選んだ味方と周り1マスを45%回復し、絡んだ蔦をほどく（強化：回復45%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 3
@@ -542,7 +552,7 @@
       "root": 2,
       "drain": 0.2,
       "paint": 2,
-      "desc": "周り2マスの敵を斬って縛り、与えた傷の20%をアリアの癒しにする",
+      "desc": "周り2マスの敵を斬って2ターン縛り、与えた傷の20%をアリアの癒しにする",
       "route": "enchant",
       "legacy": true,
       "levels": [
@@ -560,7 +570,7 @@
           "root": 2,
           "drain": 0.2,
           "paint": 2,
-          "desc": "周り2マスの敵を斬って縛り、与えた傷の20%をアリアの癒しにする",
+          "desc": "周り2マスの敵を斬って2ターン縛り、与えた傷の20%をアリアの癒しにする",
           "route": "enchant",
           "legacy": true,
           "upgrade": 0
@@ -579,7 +589,7 @@
           "root": 2,
           "drain": 0.25,
           "paint": 2,
-          "desc": "周り2マスの敵を斬って縛り、与えた傷の25%をアリアの癒しにする（強化：威力+12%・吸収25%・束縛2ターン）",
+          "desc": "周り2マスの敵を斬って2ターン縛り、与えた傷の25%をアリアの癒しにする（強化：威力+12%・吸収25%・束縛2ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 1
@@ -598,7 +608,7 @@
           "root": 2,
           "drain": 0.3,
           "paint": 2,
-          "desc": "周り2マスの敵を斬って縛り、与えた傷の30%をアリアの癒しにする（強化：威力+24%・吸収30%・束縛2ターン）",
+          "desc": "周り2マスの敵を斬って2ターン縛り、与えた傷の30%をアリアの癒しにする（強化：威力+24%・吸収30%・束縛2ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 2
@@ -617,7 +627,7 @@
           "root": 3,
           "drain": 0.35,
           "paint": 2,
-          "desc": "周り2マスの敵を斬って縛り、与えた傷の35%をアリアの癒しにする（強化：威力+36%・吸収35%・束縛3ターン）",
+          "desc": "周り2マスの敵を斬って2ターン縛り、与えた傷の35%をアリアの癒しにする（強化：威力+36%・吸収35%・束縛3ターン）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 3
@@ -649,9 +659,10 @@
       "target": "enemy",
       "range": 2,
       "power": 1.25,
+      "line": 1,
       "pierce": true,
       "paint": 0,
-      "desc": "2マス先まで届く必中の突き。守りを無視し、鉛を砕く",
+      "desc": "2マス先の敵と、その向こう1マスを貫く必中の突き。威力1.25倍。守りを無視し、鉛を砕く",
       "route": "enchant",
       "legacy": true,
       "levels": [
@@ -665,9 +676,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.25,
+          "line": 1,
           "pierce": true,
           "paint": 0,
-          "desc": "2マス先まで届く必中の突き。守りを無視し、鉛を砕く",
+          "desc": "2マス先の敵と、その向こう1マスを貫く必中の突き。威力1.25倍。守りを無視し、鉛を砕く",
           "route": "enchant",
           "legacy": true,
           "upgrade": 0
@@ -682,9 +694,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.4,
+          "line": 1,
           "pierce": true,
           "paint": 0,
-          "desc": "2マス先まで届く必中の突き。守りを無視し、鉛を砕く（強化：威力+12%）",
+          "desc": "2マス先の敵と、その向こう1マスを貫く必中の突き。威力1.4倍。守りを無視し、鉛を砕く（強化：威力+12%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 1
@@ -699,9 +712,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.55,
+          "line": 1,
           "pierce": true,
           "paint": 0,
-          "desc": "2マス先まで届く必中の突き。守りを無視し、鉛を砕く（強化：威力+24%）",
+          "desc": "2マス先の敵と、その向こう1マスを貫く必中の突き。威力1.55倍。守りを無視し、鉛を砕く（強化：威力+24%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 2
@@ -716,9 +730,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.7,
+          "line": 1,
           "pierce": true,
           "paint": 0,
-          "desc": "2マス先まで届く必中の突き。守りを無視し、鉛を砕く（強化：威力+36%）",
+          "desc": "2マス先の敵と、その向こう1マスを貫く必中の突き。威力1.7倍。守りを無視し、鉛を砕く（強化：威力+36%）",
           "route": "enchant",
           "legacy": true,
           "upgrade": 3
@@ -749,10 +764,9 @@
       "cost": 4,
       "target": "ally",
       "range": 3,
-      "heal": 0.25,
       "guard": 3,
       "paint": 1,
-      "desc": "3マス先までの味方を25%回復し、3ターン守りを固める",
+      "desc": "3マス先までの味方一人を、3ターン守りで包む。回復はしない",
       "route": "summon",
       "legacy": true,
       "levels": [
@@ -765,10 +779,9 @@
           "cost": 4,
           "target": "ally",
           "range": 3,
-          "heal": 0.25,
           "guard": 3,
           "paint": 1,
-          "desc": "3マス先までの味方を25%回復し、3ターン守りを固める",
+          "desc": "3マス先までの味方一人を、3ターン守りで包む。回復はしない",
           "route": "summon",
           "legacy": true,
           "upgrade": 0
@@ -782,10 +795,9 @@
           "cost": 4,
           "target": "ally",
           "range": 3,
-          "heal": 0.3,
           "guard": 3,
           "paint": 1,
-          "desc": "3マス先までの味方を30%回復し、3ターン守りを固める（強化：回復30%・守り3ターン）",
+          "desc": "3マス先までの味方一人を、3ターン守りで包む。回復はしない（強化：守り3ターン）",
           "route": "summon",
           "legacy": true,
           "upgrade": 1
@@ -799,10 +811,9 @@
           "cost": 4,
           "target": "ally",
           "range": 3,
-          "heal": 0.35,
           "guard": 4,
           "paint": 1,
-          "desc": "3マス先までの味方を35%回復し、4ターン守りを固める（強化：回復35%・守り4ターン）",
+          "desc": "3マス先までの味方一人を、4ターン守りで包む。回復はしない（強化：守り4ターン）",
           "route": "summon",
           "legacy": true,
           "upgrade": 2
@@ -816,10 +827,9 @@
           "cost": 4,
           "target": "ally",
           "range": 3,
-          "heal": 0.4,
           "guard": 4,
           "paint": 1,
-          "desc": "3マス先までの味方を40%回復し、4ターン守りを固める（強化：回復40%・守り4ターン）",
+          "desc": "3マス先までの味方一人を、4ターン守りで包む。回復はしない（強化：守り4ターン）",
           "route": "summon",
           "legacy": true,
           "upgrade": 3
@@ -854,7 +864,7 @@
       "power": 1.4,
       "pierce": true,
       "paint": 1,
-      "desc": "周り1マスの敵へ黄金の光。守りと鉛を貫く",
+      "desc": "周り1マスの敵へ黄金の光。威力1.4倍。守りと鉛をまとめて貫く",
       "route": "summon",
       "legacy": true,
       "levels": [
@@ -871,7 +881,7 @@
           "power": 1.4,
           "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ黄金の光。守りと鉛を貫く",
+          "desc": "周り1マスの敵へ黄金の光。威力1.4倍。守りと鉛をまとめて貫く",
           "route": "summon",
           "legacy": true,
           "upgrade": 0
@@ -889,7 +899,7 @@
           "power": 1.568,
           "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ黄金の光。守りと鉛を貫く（強化：威力+12%）",
+          "desc": "周り1マスの敵へ黄金の光。威力1.568倍。守りと鉛をまとめて貫く（強化：威力+12%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 1
@@ -907,7 +917,7 @@
           "power": 1.736,
           "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ黄金の光。守りと鉛を貫く（強化：威力+24%）",
+          "desc": "周り1マスの敵へ黄金の光。威力1.736倍。守りと鉛をまとめて貫く（強化：威力+24%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 2
@@ -925,7 +935,7 @@
           "power": 1.904,
           "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ黄金の光。守りと鉛を貫く（強化：威力+36%）",
+          "desc": "周り1マスの敵へ黄金の光。威力1.904倍。守りと鉛をまとめて貫く（強化：威力+36%）",
           "route": "summon",
           "legacy": true,
           "upgrade": 3
@@ -948,337 +958,34 @@
       ]
     },
     {
-      "id": "king_prism",
-      "spirit": "king",
-      "at": 8,
-      "name": "虹彩の光弾",
-      "type": "魔法",
-      "cost": 3,
-      "target": "enemy",
-      "range": 4,
-      "power": 1.3,
-      "paint": 1,
-      "desc": "4マス先へ届く必中の虹の光。周り1マスを虹にする",
-      "route": "summon",
-      "legacy": true,
-      "levels": [
-        {
-          "id": "king_prism",
-          "spirit": "king",
-          "at": 8,
-          "name": "虹彩の光弾",
-          "type": "魔法",
-          "cost": 3,
-          "target": "enemy",
-          "range": 4,
-          "power": 1.3,
-          "paint": 1,
-          "desc": "4マス先へ届く必中の虹の光。周り1マスを虹にする",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 0
-        },
-        {
-          "id": "king_prism",
-          "spirit": "king",
-          "at": 8,
-          "name": "虹彩の光弾 +1",
-          "type": "魔法",
-          "cost": 3,
-          "target": "enemy",
-          "range": 4,
-          "power": 1.456,
-          "paint": 1,
-          "desc": "4マス先へ届く必中の虹の光。周り1マスを虹にする（強化：威力+12%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 1
-        },
-        {
-          "id": "king_prism",
-          "spirit": "king",
-          "at": 8,
-          "name": "虹彩の光弾 +2",
-          "type": "魔法",
-          "cost": 3,
-          "target": "enemy",
-          "range": 4,
-          "power": 1.612,
-          "paint": 1,
-          "desc": "4マス先へ届く必中の虹の光。周り1マスを虹にする（強化：威力+24%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 2
-        },
-        {
-          "id": "king_prism",
-          "spirit": "king",
-          "at": 8,
-          "name": "虹彩の光弾 +3",
-          "type": "魔法",
-          "cost": 3,
-          "target": "enemy",
-          "range": 4,
-          "power": 1.768,
-          "paint": 1,
-          "desc": "4マス先へ届く必中の虹の光。周り1マスを虹にする（強化：威力+36%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
-      "id": "king_canvas",
-      "spirit": "king",
-      "at": 20,
-      "name": "七色の結界",
-      "type": "スキル",
-      "cost": 5,
-      "target": "ally",
-      "range": 3,
-      "radius": 2,
-      "heal": 0.2,
-      "guard": 2,
-      "paint": 2,
-      "desc": "選んだ味方の周り2マスを虹で包み、味方を20%回復して守る",
-      "route": "summon",
-      "legacy": true,
-      "levels": [
-        {
-          "id": "king_canvas",
-          "spirit": "king",
-          "at": 20,
-          "name": "七色の結界",
-          "type": "スキル",
-          "cost": 5,
-          "target": "ally",
-          "range": 3,
-          "radius": 2,
-          "heal": 0.2,
-          "guard": 2,
-          "paint": 2,
-          "desc": "選んだ味方の周り2マスを虹で包み、味方を20%回復して守る",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 0
-        },
-        {
-          "id": "king_canvas",
-          "spirit": "king",
-          "at": 20,
-          "name": "七色の結界 +1",
-          "type": "スキル",
-          "cost": 5,
-          "target": "ally",
-          "range": 3,
-          "radius": 2,
-          "heal": 0.25,
-          "guard": 2,
-          "paint": 2,
-          "desc": "選んだ味方の周り2マスを虹で包み、味方を25%回復して守る（強化：回復25%・守り2ターン）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 1
-        },
-        {
-          "id": "king_canvas",
-          "spirit": "king",
-          "at": 20,
-          "name": "七色の結界 +2",
-          "type": "スキル",
-          "cost": 5,
-          "target": "ally",
-          "range": 3,
-          "radius": 2,
-          "heal": 0.3,
-          "guard": 3,
-          "paint": 2,
-          "desc": "選んだ味方の周り2マスを虹で包み、味方を30%回復して守る（強化：回復30%・守り3ターン）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 2
-        },
-        {
-          "id": "king_canvas",
-          "spirit": "king",
-          "at": 20,
-          "name": "七色の結界 +3",
-          "type": "スキル",
-          "cost": 5,
-          "target": "ally",
-          "range": 3,
-          "radius": 2,
-          "heal": 0.35,
-          "guard": 3,
-          "paint": 2,
-          "desc": "選んだ味方の周り2マスを虹で包み、味方を35%回復して守る（強化：回復35%・守り3ターン）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
-      "id": "king_resonance",
-      "spirit": "king",
-      "at": 40,
-      "name": "パレット・レゾナンス",
-      "type": "技",
-      "cost": 7,
-      "target": "area",
-      "range": 4,
-      "radius": 2,
-      "power": 1.6,
-      "paint": 2,
-      "desc": "周り2マスへ七色の斬撃。広い範囲の穢れを打ち、床を虹にする",
-      "route": "summon",
-      "legacy": true,
-      "levels": [
-        {
-          "id": "king_resonance",
-          "spirit": "king",
-          "at": 40,
-          "name": "パレット・レゾナンス",
-          "type": "技",
-          "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.6,
-          "paint": 2,
-          "desc": "周り2マスへ七色の斬撃。広い範囲の穢れを打ち、床を虹にする",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 0
-        },
-        {
-          "id": "king_resonance",
-          "spirit": "king",
-          "at": 40,
-          "name": "パレット・レゾナンス +1",
-          "type": "技",
-          "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.792,
-          "paint": 2,
-          "desc": "周り2マスへ七色の斬撃。広い範囲の穢れを打ち、床を虹にする（強化：威力+12%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 1
-        },
-        {
-          "id": "king_resonance",
-          "spirit": "king",
-          "at": 40,
-          "name": "パレット・レゾナンス +2",
-          "type": "技",
-          "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.984,
-          "paint": 2,
-          "desc": "周り2マスへ七色の斬撃。広い範囲の穢れを打ち、床を虹にする（強化：威力+24%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 2
-        },
-        {
-          "id": "king_resonance",
-          "spirit": "king",
-          "at": 40,
-          "name": "パレット・レゾナンス +3",
-          "type": "技",
-          "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 2.176,
-          "paint": 2,
-          "desc": "周り2マスへ七色の斬撃。広い範囲の穢れを打ち、床を虹にする（強化：威力+36%）",
-          "route": "summon",
-          "legacy": true,
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
       "id": "gran_current",
       "spirit": "gran",
       "route": "enchant",
       "at": 20,
-      "name": "凪の構え",
+      "name": "凪の祈り",
       "type": "スキル",
       "cost": 3,
       "target": "ally",
-      "range": 0,
+      "range": 1,
       "heal": 0.35,
       "guard": 1,
       "paint": 1,
-      "desc": "アリア自身を35%回復し、1ターン守る。足元の周り1マスを虹にする",
+      "desc": "自分か隣の味方を35%回復し、1ターン守る。周り1マスを虹にする",
       "levels": [
         {
           "id": "gran_current",
           "spirit": "gran",
           "route": "enchant",
           "at": 20,
-          "name": "凪の構え",
+          "name": "凪の祈り",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.35,
           "guard": 1,
           "paint": 1,
-          "desc": "アリア自身を35%回復し、1ターン守る。足元の周り1マスを虹にする",
+          "desc": "自分か隣の味方を35%回復し、1ターン守る。周り1マスを虹にする",
           "upgrade": 0
         },
         {
@@ -1286,15 +993,15 @@
           "spirit": "gran",
           "route": "enchant",
           "at": 20,
-          "name": "凪の構え +1",
+          "name": "凪の祈り +1",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.4,
           "guard": 1,
           "paint": 1,
-          "desc": "アリア自身を40%回復し、1ターン守る。足元の周り1マスを虹にする（強化：回復40%・守り1ターン）",
+          "desc": "自分か隣の味方を40%回復し、1ターン守る。周り1マスを虹にする（強化：回復40%・守り1ターン）",
           "upgrade": 1
         },
         {
@@ -1302,15 +1009,15 @@
           "spirit": "gran",
           "route": "enchant",
           "at": 20,
-          "name": "凪の構え +2",
+          "name": "凪の祈り +2",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.45,
           "guard": 2,
           "paint": 1,
-          "desc": "アリア自身を45%回復し、2ターン守る。足元の周り1マスを虹にする（強化：回復45%・守り2ターン）",
+          "desc": "自分か隣の味方を45%回復し、2ターン守る。周り1マスを虹にする（強化：回復45%・守り2ターン）",
           "upgrade": 2
         },
         {
@@ -1318,15 +1025,15 @@
           "spirit": "gran",
           "route": "enchant",
           "at": 20,
-          "name": "凪の構え +3",
+          "name": "凪の祈り +3",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.5,
           "guard": 2,
           "paint": 1,
-          "desc": "アリア自身を50%回復し、2ターン守る。足元の周り1マスを虹にする（強化：回復50%・守り2ターン）",
+          "desc": "自分か隣の味方を50%回復し、2ターン守る。周り1マスを虹にする（強化：回復50%・守り2ターン）",
           "upgrade": 3
         }
       ],
@@ -1358,8 +1065,9 @@
       "range": 3,
       "radius": 1,
       "power": 0.9,
+      "push": true,
       "paint": 1,
-      "desc": "3マス先の周り1マスへ必中の潮霧。密集した敵を打ち、虹を広げる",
+      "desc": "3マス先の周り1マスへ必中の潮霧。威力0.9倍。敵を押し流し、虹を広げる",
       "levels": [
         {
           "id": "gran_spray",
@@ -1373,8 +1081,9 @@
           "range": 3,
           "radius": 1,
           "power": 0.9,
+          "push": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ必中の潮霧。密集した敵を打ち、虹を広げる",
+          "desc": "3マス先の周り1マスへ必中の潮霧。威力0.9倍。敵を押し流し、虹を広げる",
           "upgrade": 0
         },
         {
@@ -1389,8 +1098,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.008,
+          "push": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ必中の潮霧。密集した敵を打ち、虹を広げる（強化：威力+12%）",
+          "desc": "3マス先の周り1マスへ必中の潮霧。威力1.008倍。敵を押し流し、虹を広げる（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -1405,8 +1115,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.116,
+          "push": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ必中の潮霧。密集した敵を打ち、虹を広げる（強化：威力+24%）",
+          "desc": "3マス先の周り1マスへ必中の潮霧。威力1.116倍。敵を押し流し、虹を広げる（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -1421,8 +1132,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.224,
+          "push": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ必中の潮霧。密集した敵を打ち、虹を広げる（強化：威力+36%）",
+          "desc": "3マス先の周り1マスへ必中の潮霧。威力1.224倍。敵を押し流し、虹を広げる（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -1453,10 +1165,9 @@
       "target": "ally",
       "range": 3,
       "radius": 2,
-      "heal": 0.4,
-      "guard": 2,
+      "heal": 0.5,
       "paint": 2,
-      "desc": "選んだ味方と周り2マスを40%回復し、2ターン守る。広い範囲を虹にする",
+      "desc": "選んだ味方と周り2マスを50%回復する。守りは付けず、広い潮で虹にする",
       "levels": [
         {
           "id": "gran_ocean",
@@ -1469,10 +1180,9 @@
           "target": "ally",
           "range": 3,
           "radius": 2,
-          "heal": 0.4,
-          "guard": 2,
+          "heal": 0.5,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを40%回復し、2ターン守る。広い範囲を虹にする",
+          "desc": "選んだ味方と周り2マスを50%回復する。守りは付けず、広い潮で虹にする",
           "upgrade": 0
         },
         {
@@ -1486,10 +1196,9 @@
           "target": "ally",
           "range": 3,
           "radius": 2,
-          "heal": 0.45,
-          "guard": 2,
+          "heal": 0.55,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを45%回復し、2ターン守る。広い範囲を虹にする（強化：回復45%・守り2ターン）",
+          "desc": "選んだ味方と周り2マスを55%回復する。守りは付けず、広い潮で虹にする（強化：回復55%）",
           "upgrade": 1
         },
         {
@@ -1503,10 +1212,9 @@
           "target": "ally",
           "range": 3,
           "radius": 2,
-          "heal": 0.5,
-          "guard": 3,
+          "heal": 0.6,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを50%回復し、3ターン守る。広い範囲を虹にする（強化：回復50%・守り3ターン）",
+          "desc": "選んだ味方と周り2マスを60%回復する。守りは付けず、広い潮で虹にする（強化：回復60%）",
           "upgrade": 2
         },
         {
@@ -1520,10 +1228,9 @@
           "target": "ally",
           "range": 3,
           "radius": 2,
-          "heal": 0.55,
-          "guard": 3,
+          "heal": 0.65,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを55%回復し、3ターン守る。広い範囲を虹にする（強化：回復55%・守り3ターン）",
+          "desc": "選んだ味方と周り2マスを65%回復する。守りは付けず、広い潮で虹にする（強化：回復65%）",
           "upgrade": 3
         }
       ],
@@ -1552,10 +1259,11 @@
       "type": "スキル",
       "cost": 3,
       "target": "ally",
-      "range": 0,
+      "range": 1,
       "heal": 0.4,
+      "cleanse": true,
       "paint": 1,
-      "desc": "アリア自身を40%回復し、周り1マスを虹にする。前線から退かずに立て直す",
+      "desc": "自分か隣の味方を40%回復し、絡んだ蔦をほどく。周り1マスを虹にする",
       "levels": [
         {
           "id": "ivy_renew",
@@ -1566,10 +1274,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.4,
+          "cleanse": true,
           "paint": 1,
-          "desc": "アリア自身を40%回復し、周り1マスを虹にする。前線から退かずに立て直す",
+          "desc": "自分か隣の味方を40%回復し、絡んだ蔦をほどく。周り1マスを虹にする",
           "upgrade": 0
         },
         {
@@ -1581,10 +1290,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.45,
+          "cleanse": true,
           "paint": 1,
-          "desc": "アリア自身を45%回復し、周り1マスを虹にする。前線から退かずに立て直す（強化：回復45%）",
+          "desc": "自分か隣の味方を45%回復し、絡んだ蔦をほどく。周り1マスを虹にする（強化：回復45%）",
           "upgrade": 1
         },
         {
@@ -1596,10 +1306,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.5,
+          "cleanse": true,
           "paint": 1,
-          "desc": "アリア自身を50%回復し、周り1マスを虹にする。前線から退かずに立て直す（強化：回復50%）",
+          "desc": "自分か隣の味方を50%回復し、絡んだ蔦をほどく。周り1マスを虹にする（強化：回復50%）",
           "upgrade": 2
         },
         {
@@ -1611,10 +1322,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.55,
+          "cleanse": true,
           "paint": 1,
-          "desc": "アリア自身を55%回復し、周り1マスを虹にする。前線から退かずに立て直す（強化：回復55%）",
+          "desc": "自分か隣の味方を55%回復し、絡んだ蔦をほどく。周り1マスを虹にする（強化：回復55%）",
           "upgrade": 3
         }
       ],
@@ -1642,13 +1354,13 @@
       "name": "蔦の木立",
       "type": "魔法",
       "cost": 4,
-      "target": "area",
+      "target": "enemy",
       "range": 3,
-      "radius": 1,
       "power": 0.7,
+      "line": 1,
       "root": 1,
       "paint": 1,
-      "desc": "周り1マスの敵を必中で攻撃し、1ターン移動を封じる",
+      "desc": "狙った敵と、その向こう1マスを必中で打ち、1ターン移動を封じる",
       "levels": [
         {
           "id": "ivy_grove",
@@ -1658,13 +1370,13 @@
           "name": "蔦の木立",
           "type": "魔法",
           "cost": 4,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 0.7,
+          "line": 1,
           "root": 1,
           "paint": 1,
-          "desc": "周り1マスの敵を必中で攻撃し、1ターン移動を封じる",
+          "desc": "狙った敵と、その向こう1マスを必中で打ち、1ターン移動を封じる",
           "upgrade": 0
         },
         {
@@ -1675,13 +1387,13 @@
           "name": "蔦の木立 +1",
           "type": "魔法",
           "cost": 4,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 0.784,
+          "line": 1,
           "root": 1,
           "paint": 1,
-          "desc": "周り1マスの敵を必中で攻撃し、1ターン移動を封じる（強化：威力+12%・束縛1ターン）",
+          "desc": "狙った敵と、その向こう1マスを必中で打ち、1ターン移動を封じる（強化：威力+12%・束縛1ターン）",
           "upgrade": 1
         },
         {
@@ -1692,13 +1404,13 @@
           "name": "蔦の木立 +2",
           "type": "魔法",
           "cost": 4,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 0.868,
+          "line": 1,
           "root": 1,
           "paint": 1,
-          "desc": "周り1マスの敵を必中で攻撃し、1ターン移動を封じる（強化：威力+24%・束縛1ターン）",
+          "desc": "狙った敵と、その向こう1マスを必中で打ち、1ターン移動を封じる（強化：威力+24%・束縛1ターン）",
           "upgrade": 2
         },
         {
@@ -1709,13 +1421,13 @@
           "name": "蔦の木立 +3",
           "type": "魔法",
           "cost": 4,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 0.952,
+          "line": 1,
           "root": 2,
           "paint": 1,
-          "desc": "周り1マスの敵を必中で攻撃し、2ターン移動を封じる（強化：威力+36%・束縛2ターン）",
+          "desc": "狙った敵と、その向こう1マスを必中で打ち、2ターン移動を封じる（強化：威力+36%・束縛2ターン）",
           "upgrade": 3
         }
       ],
@@ -1747,9 +1459,9 @@
       "range": 3,
       "radius": 2,
       "heal": 0.4,
-      "guard": 3,
+      "cleanse": true,
       "paint": 2,
-      "desc": "選んだ味方と周り2マスを40%回復し、3ターン守る。花の虹で床を包む",
+      "desc": "選んだ味方と周り2マスを40%回復し、蔦をほどく。花の虹で床を包む",
       "levels": [
         {
           "id": "ivy_sanctuary",
@@ -1763,9 +1475,9 @@
           "range": 3,
           "radius": 2,
           "heal": 0.4,
-          "guard": 3,
+          "cleanse": true,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを40%回復し、3ターン守る。花の虹で床を包む",
+          "desc": "選んだ味方と周り2マスを40%回復し、蔦をほどく。花の虹で床を包む",
           "upgrade": 0
         },
         {
@@ -1780,9 +1492,9 @@
           "range": 3,
           "radius": 2,
           "heal": 0.45,
-          "guard": 3,
+          "cleanse": true,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを45%回復し、3ターン守る。花の虹で床を包む（強化：回復45%・守り3ターン）",
+          "desc": "選んだ味方と周り2マスを45%回復し、蔦をほどく。花の虹で床を包む（強化：回復45%）",
           "upgrade": 1
         },
         {
@@ -1797,9 +1509,9 @@
           "range": 3,
           "radius": 2,
           "heal": 0.5,
-          "guard": 4,
+          "cleanse": true,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを50%回復し、4ターン守る。花の虹で床を包む（強化：回復50%・守り4ターン）",
+          "desc": "選んだ味方と周り2マスを50%回復し、蔦をほどく。花の虹で床を包む（強化：回復50%）",
           "upgrade": 2
         },
         {
@@ -1814,9 +1526,9 @@
           "range": 3,
           "radius": 2,
           "heal": 0.55,
-          "guard": 4,
+          "cleanse": true,
           "paint": 2,
-          "desc": "選んだ味方と周り2マスを55%回復し、4ターン守る。花の虹で床を包む（強化：回復55%・守り4ターン）",
+          "desc": "選んだ味方と周り2マスを55%回復し、蔦をほどく。花の虹で床を包む（強化：回復55%）",
           "upgrade": 3
         }
       ],
@@ -1841,30 +1553,28 @@
       "spirit": "spinel",
       "route": "enchant",
       "at": 20,
-      "name": "金継ぎの構え",
+      "name": "金継ぎの板",
       "type": "スキル",
       "cost": 3,
       "target": "ally",
-      "range": 0,
-      "heal": 0.25,
-      "guard": 2,
+      "range": 1,
+      "plate": 1,
       "paint": 1,
-      "desc": "アリア自身を25%回復し、2ターン守りを固める。周り1マスを虹にする",
+      "desc": "自分か隣の味方に金継ぎを1枚与える。次に受ける傷を一度だけ半減する",
       "levels": [
         {
           "id": "spinel_polish",
           "spirit": "spinel",
           "route": "enchant",
           "at": 20,
-          "name": "金継ぎの構え",
+          "name": "金継ぎの板",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
-          "heal": 0.25,
-          "guard": 2,
+          "range": 1,
+          "plate": 1,
           "paint": 1,
-          "desc": "アリア自身を25%回復し、2ターン守りを固める。周り1マスを虹にする",
+          "desc": "自分か隣の味方に金継ぎを1枚与える。次に受ける傷を一度だけ半減する",
           "upgrade": 0
         },
         {
@@ -1872,15 +1582,14 @@
           "spirit": "spinel",
           "route": "enchant",
           "at": 20,
-          "name": "金継ぎの構え +1",
+          "name": "金継ぎの板 +1",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
-          "heal": 0.3,
-          "guard": 2,
+          "range": 1,
+          "plate": 1,
           "paint": 1,
-          "desc": "アリア自身を30%回復し、2ターン守りを固める。周り1マスを虹にする（強化：回復30%・守り2ターン）",
+          "desc": "自分か隣の味方に金継ぎを1枚与える。次に受ける傷を一度だけ半減する（強化：）",
           "upgrade": 1
         },
         {
@@ -1888,15 +1597,14 @@
           "spirit": "spinel",
           "route": "enchant",
           "at": 20,
-          "name": "金継ぎの構え +2",
+          "name": "金継ぎの板 +2",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
-          "heal": 0.35,
-          "guard": 3,
+          "range": 1,
+          "plate": 1,
           "paint": 1,
-          "desc": "アリア自身を35%回復し、3ターン守りを固める。周り1マスを虹にする（強化：回復35%・守り3ターン）",
+          "desc": "自分か隣の味方に金継ぎを1枚与える。次に受ける傷を一度だけ半減する（強化：）",
           "upgrade": 2
         },
         {
@@ -1904,15 +1612,14 @@
           "spirit": "spinel",
           "route": "enchant",
           "at": 20,
-          "name": "金継ぎの構え +3",
+          "name": "金継ぎの板 +3",
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
-          "heal": 0.4,
-          "guard": 3,
+          "range": 1,
+          "plate": 1,
           "paint": 1,
-          "desc": "アリア自身を40%回復し、3ターン守りを固める。周り1マスを虹にする（強化：回復40%・守り3ターン）",
+          "desc": "自分か隣の味方に金継ぎを1枚与える。次に受ける傷を一度だけ半減する（強化：）",
           "upgrade": 3
         }
       ],
@@ -1945,7 +1652,7 @@
       "power": 2,
       "pierce": true,
       "paint": 1,
-      "desc": "2マス先まで届く威力2倍の必中斬撃。敵1体の守りと鉛を貫く",
+      "desc": "2マス先の敵一人へ威力2倍の必中斬撃。守りと鉛を貫く",
       "levels": [
         {
           "id": "spinel_verdict",
@@ -1960,7 +1667,7 @@
           "power": 2,
           "pierce": true,
           "paint": 1,
-          "desc": "2マス先まで届く威力2倍の必中斬撃。敵1体の守りと鉛を貫く",
+          "desc": "2マス先の敵一人へ威力2倍の必中斬撃。守りと鉛を貫く",
           "upgrade": 0
         },
         {
@@ -1976,7 +1683,7 @@
           "power": 2.24,
           "pierce": true,
           "paint": 1,
-          "desc": "2マス先まで届く威力2.24倍の必中斬撃。敵1体の守りと鉛を貫く（強化：威力+12%）",
+          "desc": "2マス先の敵一人へ威力2.24倍の必中斬撃。守りと鉛を貫く（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -1992,7 +1699,7 @@
           "power": 2.48,
           "pierce": true,
           "paint": 1,
-          "desc": "2マス先まで届く威力2.48倍の必中斬撃。敵1体の守りと鉛を貫く（強化：威力+24%）",
+          "desc": "2マス先の敵一人へ威力2.48倍の必中斬撃。守りと鉛を貫く（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2008,7 +1715,7 @@
           "power": 2.72,
           "pierce": true,
           "paint": 1,
-          "desc": "2マス先まで届く威力2.72倍の必中斬撃。敵1体の守りと鉛を貫く（強化：威力+36%）",
+          "desc": "2マス先の敵一人へ威力2.72倍の必中斬撃。守りと鉛を貫く（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2040,9 +1747,8 @@
       "range": 3,
       "radius": 1,
       "power": 0.9,
-      "pierce": true,
       "paint": 1,
-      "desc": "周り1マスの敵へ必中の金砂。守りと鉛を貫き、床を虹にする",
+      "desc": "周り1マスの敵へ必中の金砂。威力0.9倍。鉛を一枚剥がし、守りは貫かない",
       "levels": [
         {
           "id": "spinel_spark",
@@ -2056,9 +1762,8 @@
           "range": 3,
           "radius": 1,
           "power": 0.9,
-          "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ必中の金砂。守りと鉛を貫き、床を虹にする",
+          "desc": "周り1マスの敵へ必中の金砂。威力0.9倍。鉛を一枚剥がし、守りは貫かない",
           "upgrade": 0
         },
         {
@@ -2073,9 +1778,8 @@
           "range": 3,
           "radius": 1,
           "power": 1.008,
-          "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ必中の金砂。守りと鉛を貫き、床を虹にする（強化：威力+12%）",
+          "desc": "周り1マスの敵へ必中の金砂。威力1.008倍。鉛を一枚剥がし、守りは貫かない（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2090,9 +1794,8 @@
           "range": 3,
           "radius": 1,
           "power": 1.116,
-          "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ必中の金砂。守りと鉛を貫き、床を虹にする（強化：威力+24%）",
+          "desc": "周り1マスの敵へ必中の金砂。威力1.116倍。鉛を一枚剥がし、守りは貫かない（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2107,9 +1810,8 @@
           "range": 3,
           "radius": 1,
           "power": 1.224,
-          "pierce": true,
           "paint": 1,
-          "desc": "周り1マスの敵へ必中の金砂。守りと鉛を貫き、床を虹にする（強化：威力+36%）",
+          "desc": "周り1マスの敵へ必中の金砂。威力1.224倍。鉛を一枚剥がし、守りは貫かない（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2130,310 +1832,34 @@
       ]
     },
     {
-      "id": "king_edge",
-      "spirit": "king",
-      "route": "enchant",
-      "at": 8,
-      "name": "七彩の刃",
-      "type": "技",
-      "cost": 3,
-      "target": "enemy",
-      "range": 1,
-      "power": 1.45,
-      "paint": 1,
-      "desc": "隣の敵1体へ威力1.45倍の必中斬撃。周り1マスを七色に染める",
-      "levels": [
-        {
-          "id": "king_edge",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 8,
-          "name": "七彩の刃",
-          "type": "技",
-          "cost": 3,
-          "target": "enemy",
-          "range": 1,
-          "power": 1.45,
-          "paint": 1,
-          "desc": "隣の敵1体へ威力1.45倍の必中斬撃。周り1マスを七色に染める",
-          "upgrade": 0
-        },
-        {
-          "id": "king_edge",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 8,
-          "name": "七彩の刃 +1",
-          "type": "技",
-          "cost": 3,
-          "target": "enemy",
-          "range": 1,
-          "power": 1.624,
-          "paint": 1,
-          "desc": "隣の敵1体へ威力1.624倍の必中斬撃。周り1マスを七色に染める（強化：威力+12%）",
-          "upgrade": 1
-        },
-        {
-          "id": "king_edge",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 8,
-          "name": "七彩の刃 +2",
-          "type": "技",
-          "cost": 3,
-          "target": "enemy",
-          "range": 1,
-          "power": 1.798,
-          "paint": 1,
-          "desc": "隣の敵1体へ威力1.798倍の必中斬撃。周り1マスを七色に染める（強化：威力+24%）",
-          "upgrade": 2
-        },
-        {
-          "id": "king_edge",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 8,
-          "name": "七彩の刃 +3",
-          "type": "技",
-          "cost": 3,
-          "target": "enemy",
-          "range": 1,
-          "power": 1.972,
-          "paint": 1,
-          "desc": "隣の敵1体へ威力1.972倍の必中斬撃。周り1マスを七色に染める（強化：威力+36%）",
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
-      "id": "king_mantle",
-      "spirit": "king",
-      "route": "enchant",
-      "at": 20,
-      "name": "虹の纏い",
-      "type": "スキル",
-      "cost": 4,
-      "target": "ally",
-      "range": 0,
-      "heal": 0.3,
-      "guard": 2,
-      "paint": 1,
-      "desc": "アリア自身を30%回復し、2ターン守る。心剣の周り1マスを虹にする",
-      "levels": [
-        {
-          "id": "king_mantle",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 20,
-          "name": "虹の纏い",
-          "type": "スキル",
-          "cost": 4,
-          "target": "ally",
-          "range": 0,
-          "heal": 0.3,
-          "guard": 2,
-          "paint": 1,
-          "desc": "アリア自身を30%回復し、2ターン守る。心剣の周り1マスを虹にする",
-          "upgrade": 0
-        },
-        {
-          "id": "king_mantle",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 20,
-          "name": "虹の纏い +1",
-          "type": "スキル",
-          "cost": 4,
-          "target": "ally",
-          "range": 0,
-          "heal": 0.35,
-          "guard": 2,
-          "paint": 1,
-          "desc": "アリア自身を35%回復し、2ターン守る。心剣の周り1マスを虹にする（強化：回復35%・守り2ターン）",
-          "upgrade": 1
-        },
-        {
-          "id": "king_mantle",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 20,
-          "name": "虹の纏い +2",
-          "type": "スキル",
-          "cost": 4,
-          "target": "ally",
-          "range": 0,
-          "heal": 0.4,
-          "guard": 3,
-          "paint": 1,
-          "desc": "アリア自身を40%回復し、3ターン守る。心剣の周り1マスを虹にする（強化：回復40%・守り3ターン）",
-          "upgrade": 2
-        },
-        {
-          "id": "king_mantle",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 20,
-          "name": "虹の纏い +3",
-          "type": "スキル",
-          "cost": 4,
-          "target": "ally",
-          "range": 0,
-          "heal": 0.45,
-          "guard": 3,
-          "paint": 1,
-          "desc": "アリア自身を45%回復し、3ターン守る。心剣の周り1マスを虹にする（強化：回復45%・守り3ターン）",
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
-      "id": "king_spectrum",
-      "spirit": "king",
-      "route": "enchant",
-      "at": 40,
-      "name": "虹彩の極剣",
-      "type": "技",
-      "cost": 7,
-      "target": "enemy",
-      "range": 2,
-      "power": 2.2,
-      "paint": 2,
-      "desc": "2マス先の敵1体へ威力2.2倍の必中斬撃。周り2マスを虹にする",
-      "levels": [
-        {
-          "id": "king_spectrum",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 40,
-          "name": "虹彩の極剣",
-          "type": "技",
-          "cost": 7,
-          "target": "enemy",
-          "range": 2,
-          "power": 2.2,
-          "paint": 2,
-          "desc": "2マス先の敵1体へ威力2.2倍の必中斬撃。周り2マスを虹にする",
-          "upgrade": 0
-        },
-        {
-          "id": "king_spectrum",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 40,
-          "name": "虹彩の極剣 +1",
-          "type": "技",
-          "cost": 7,
-          "target": "enemy",
-          "range": 2,
-          "power": 2.464,
-          "paint": 2,
-          "desc": "2マス先の敵1体へ威力2.464倍の必中斬撃。周り2マスを虹にする（強化：威力+12%）",
-          "upgrade": 1
-        },
-        {
-          "id": "king_spectrum",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 40,
-          "name": "虹彩の極剣 +2",
-          "type": "技",
-          "cost": 7,
-          "target": "enemy",
-          "range": 2,
-          "power": 2.728,
-          "paint": 2,
-          "desc": "2マス先の敵1体へ威力2.728倍の必中斬撃。周り2マスを虹にする（強化：威力+24%）",
-          "upgrade": 2
-        },
-        {
-          "id": "king_spectrum",
-          "spirit": "king",
-          "route": "enchant",
-          "at": 40,
-          "name": "虹彩の極剣 +3",
-          "type": "技",
-          "cost": 7,
-          "target": "enemy",
-          "range": 2,
-          "power": 2.992,
-          "paint": 2,
-          "desc": "2マス先の敵1体へ威力2.992倍の必中斬撃。周り2マスを虹にする（強化：威力+36%）",
-          "upgrade": 3
-        }
-      ],
-      "recipes": [
-        {
-          "m_dust": 3,
-          "m_violet": 2
-        },
-        {
-          "m_dust": 6,
-          "m_violet": 4
-        },
-        {
-          "m_dust": 10,
-          "m_violet": 6,
-          "m_core": 1
-        }
-      ]
-    },
-    {
       "id": "vard_horn",
       "spirit": "vard",
       "route": "enchant",
       "at": 8,
-      "name": "紅角の一閃",
+      "name": "紅角の斬り",
       "type": "技",
       "cost": 3,
       "target": "enemy",
       "range": 2,
       "power": 1.35,
+      "fury": true,
       "paint": 0,
-      "desc": "2マス先へ威力1.35倍の必中斬撃。宿した憤怒の攻撃上昇も乗る",
+      "desc": "2マス先の敵一人へ威力1.35倍の必中斬撃。失ったHPが多いほど、さらに強くなる",
       "levels": [
         {
           "id": "vard_horn",
           "spirit": "vard",
           "route": "enchant",
           "at": 8,
-          "name": "紅角の一閃",
+          "name": "紅角の斬り",
           "type": "技",
           "cost": 3,
           "target": "enemy",
           "range": 2,
           "power": 1.35,
+          "fury": true,
           "paint": 0,
-          "desc": "2マス先へ威力1.35倍の必中斬撃。宿した憤怒の攻撃上昇も乗る",
+          "desc": "2マス先の敵一人へ威力1.35倍の必中斬撃。失ったHPが多いほど、さらに強くなる",
           "upgrade": 0
         },
         {
@@ -2441,14 +1867,15 @@
           "spirit": "vard",
           "route": "enchant",
           "at": 8,
-          "name": "紅角の一閃 +1",
+          "name": "紅角の斬り +1",
           "type": "技",
           "cost": 3,
           "target": "enemy",
           "range": 2,
           "power": 1.512,
+          "fury": true,
           "paint": 0,
-          "desc": "2マス先へ威力1.512倍の必中斬撃。宿した憤怒の攻撃上昇も乗る（強化：威力+12%）",
+          "desc": "2マス先の敵一人へ威力1.512倍の必中斬撃。失ったHPが多いほど、さらに強くなる（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2456,14 +1883,15 @@
           "spirit": "vard",
           "route": "enchant",
           "at": 8,
-          "name": "紅角の一閃 +2",
+          "name": "紅角の斬り +2",
           "type": "技",
           "cost": 3,
           "target": "enemy",
           "range": 2,
           "power": 1.674,
+          "fury": true,
           "paint": 0,
-          "desc": "2マス先へ威力1.674倍の必中斬撃。宿した憤怒の攻撃上昇も乗る（強化：威力+24%）",
+          "desc": "2マス先の敵一人へ威力1.674倍の必中斬撃。失ったHPが多いほど、さらに強くなる（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2471,14 +1899,15 @@
           "spirit": "vard",
           "route": "enchant",
           "at": 8,
-          "name": "紅角の一閃 +3",
+          "name": "紅角の斬り +3",
           "type": "技",
           "cost": 3,
           "target": "enemy",
           "range": 2,
           "power": 1.836,
+          "fury": true,
           "paint": 0,
-          "desc": "2マス先へ威力1.836倍の必中斬撃。宿した憤怒の攻撃上昇も乗る（強化：威力+36%）",
+          "desc": "2マス先の敵一人へ威力1.836倍の必中斬撃。失ったHPが多いほど、さらに強くなる（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2509,9 +1938,9 @@
       "target": "enemy",
       "range": 3,
       "power": 1.6,
-      "pierce": true,
+      "fury": true,
       "paint": 1,
-      "desc": "3マス先の敵だけへ怒りを絞り、守りを貫く。威力1.6倍",
+      "desc": "3マス先の敵一人へ威力1.6倍。守りは貫かない。失ったHPが多いほど強い",
       "levels": [
         {
           "id": "vard_focus",
@@ -2524,9 +1953,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.6,
-          "pierce": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の敵だけへ怒りを絞り、守りを貫く。威力1.6倍",
+          "desc": "3マス先の敵一人へ威力1.6倍。守りは貫かない。失ったHPが多いほど強い",
           "upgrade": 0
         },
         {
@@ -2540,9 +1969,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.792,
-          "pierce": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の敵だけへ怒りを絞り、守りを貫く。威力1.792倍（強化：威力+12%）",
+          "desc": "3マス先の敵一人へ威力1.792倍。守りは貫かない。失ったHPが多いほど強い（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2556,9 +1985,9 @@
           "target": "enemy",
           "range": 3,
           "power": 1.984,
-          "pierce": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の敵だけへ怒りを絞り、守りを貫く。威力1.984倍（強化：威力+24%）",
+          "desc": "3マス先の敵一人へ威力1.984倍。守りは貫かない。失ったHPが多いほど強い（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2572,9 +2001,9 @@
           "target": "enemy",
           "range": 3,
           "power": 2.176,
-          "pierce": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の敵だけへ怒りを絞り、守りを貫く。威力2.176倍（強化：威力+36%）",
+          "desc": "3マス先の敵一人へ威力2.176倍。守りは貫かない。失ったHPが多いほど強い（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2605,8 +2034,9 @@
       "target": "enemy",
       "range": 2,
       "power": 2.1,
+      "fury": true,
       "paint": 1,
-      "desc": "2マス先の敵へ威力2.1倍の必中斬撃。傷を負った紅角の刃ほど強くなる",
+      "desc": "2マス先の敵一人へ威力2.1倍の必中斬撃。失ったHPが多いほど、紅角の刃が強くなる",
       "levels": [
         {
           "id": "vard_edge",
@@ -2619,8 +2049,9 @@
           "target": "enemy",
           "range": 2,
           "power": 2.1,
+          "fury": true,
           "paint": 1,
-          "desc": "2マス先の敵へ威力2.1倍の必中斬撃。傷を負った紅角の刃ほど強くなる",
+          "desc": "2マス先の敵一人へ威力2.1倍の必中斬撃。失ったHPが多いほど、紅角の刃が強くなる",
           "upgrade": 0
         },
         {
@@ -2634,8 +2065,9 @@
           "target": "enemy",
           "range": 2,
           "power": 2.352,
+          "fury": true,
           "paint": 1,
-          "desc": "2マス先の敵へ威力2.352倍の必中斬撃。傷を負った紅角の刃ほど強くなる（強化：威力+12%）",
+          "desc": "2マス先の敵一人へ威力2.352倍の必中斬撃。失ったHPが多いほど、紅角の刃が強くなる（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2649,8 +2081,9 @@
           "target": "enemy",
           "range": 2,
           "power": 2.604,
+          "fury": true,
           "paint": 1,
-          "desc": "2マス先の敵へ威力2.604倍の必中斬撃。傷を負った紅角の刃ほど強くなる（強化：威力+24%）",
+          "desc": "2マス先の敵一人へ威力2.604倍の必中斬撃。失ったHPが多いほど、紅角の刃が強くなる（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2664,8 +2097,9 @@
           "target": "enemy",
           "range": 2,
           "power": 2.856,
+          "fury": true,
           "paint": 1,
-          "desc": "2マス先の敵へ威力2.856倍の必中斬撃。傷を負った紅角の刃ほど強くなる（強化：威力+36%）",
+          "desc": "2マス先の敵一人へ威力2.856倍の必中斬撃。失ったHPが多いほど、紅角の刃が強くなる（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2690,30 +2124,32 @@
       "spirit": "vard",
       "route": "summon",
       "at": 8,
-      "name": "猛牛の咆哮",
+      "name": "紅竜の咆哮",
       "type": "魔法",
       "cost": 3,
       "target": "area",
       "range": 3,
       "radius": 1,
       "power": 1,
+      "fury": true,
       "paint": 1,
-      "desc": "周り1マスの敵を必中の咆哮で打ち、床を虹に戻す",
+      "desc": "周り1マスの敵を威力1倍の咆哮で打つ。失ったHPが多いほど強い",
       "levels": [
         {
           "id": "vard_roar",
           "spirit": "vard",
           "route": "summon",
           "at": 8,
-          "name": "猛牛の咆哮",
+          "name": "紅竜の咆哮",
           "type": "魔法",
           "cost": 3,
           "target": "area",
           "range": 3,
           "radius": 1,
           "power": 1,
+          "fury": true,
           "paint": 1,
-          "desc": "周り1マスの敵を必中の咆哮で打ち、床を虹に戻す",
+          "desc": "周り1マスの敵を威力1倍の咆哮で打つ。失ったHPが多いほど強い",
           "upgrade": 0
         },
         {
@@ -2721,15 +2157,16 @@
           "spirit": "vard",
           "route": "summon",
           "at": 8,
-          "name": "猛牛の咆哮 +1",
+          "name": "紅竜の咆哮 +1",
           "type": "魔法",
           "cost": 3,
           "target": "area",
           "range": 3,
           "radius": 1,
           "power": 1.12,
+          "fury": true,
           "paint": 1,
-          "desc": "周り1マスの敵を必中の咆哮で打ち、床を虹に戻す（強化：威力+12%）",
+          "desc": "周り1マスの敵を威力1.12倍の咆哮で打つ。失ったHPが多いほど強い（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2737,15 +2174,16 @@
           "spirit": "vard",
           "route": "summon",
           "at": 8,
-          "name": "猛牛の咆哮 +2",
+          "name": "紅竜の咆哮 +2",
           "type": "魔法",
           "cost": 3,
           "target": "area",
           "range": 3,
           "radius": 1,
           "power": 1.24,
+          "fury": true,
           "paint": 1,
-          "desc": "周り1マスの敵を必中の咆哮で打ち、床を虹に戻す（強化：威力+24%）",
+          "desc": "周り1マスの敵を威力1.24倍の咆哮で打つ。失ったHPが多いほど強い（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2753,15 +2191,16 @@
           "spirit": "vard",
           "route": "summon",
           "at": 8,
-          "name": "猛牛の咆哮 +3",
+          "name": "紅竜の咆哮 +3",
           "type": "魔法",
           "cost": 3,
           "target": "area",
           "range": 3,
           "radius": 1,
           "power": 1.36,
+          "fury": true,
           "paint": 1,
-          "desc": "周り1マスの敵を必中の咆哮で打ち、床を虹に戻す（強化：威力+36%）",
+          "desc": "周り1マスの敵を威力1.36倍の咆哮で打つ。失ったHPが多いほど強い（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2786,30 +2225,34 @@
       "spirit": "vard",
       "route": "summon",
       "at": 20,
-      "name": "赤丘の地響き",
+      "name": "紅角の突進",
       "type": "技",
       "cost": 5,
-      "target": "area",
+      "target": "enemy",
       "range": 3,
-      "radius": 1,
       "power": 1.4,
+      "line": 1,
+      "push": true,
+      "fury": true,
       "paint": 1,
-      "desc": "3マス先の周り1マスへ威力1.4倍の地響きを放つ",
+      "desc": "狙った敵と、その向こう1マスへ威力1.4倍で突進する。敵を押し流し、傷が深いほど強い",
       "levels": [
         {
           "id": "vard_rush",
           "spirit": "vard",
           "route": "summon",
           "at": 20,
-          "name": "赤丘の地響き",
+          "name": "紅角の突進",
           "type": "技",
           "cost": 5,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 1.4,
+          "line": 1,
+          "push": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ威力1.4倍の地響きを放つ",
+          "desc": "狙った敵と、その向こう1マスへ威力1.4倍で突進する。敵を押し流し、傷が深いほど強い",
           "upgrade": 0
         },
         {
@@ -2817,15 +2260,17 @@
           "spirit": "vard",
           "route": "summon",
           "at": 20,
-          "name": "赤丘の地響き +1",
+          "name": "紅角の突進 +1",
           "type": "技",
           "cost": 5,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 1.568,
+          "line": 1,
+          "push": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ威力1.568倍の地響きを放つ（強化：威力+12%）",
+          "desc": "狙った敵と、その向こう1マスへ威力1.568倍で突進する。敵を押し流し、傷が深いほど強い（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -2833,15 +2278,17 @@
           "spirit": "vard",
           "route": "summon",
           "at": 20,
-          "name": "赤丘の地響き +2",
+          "name": "紅角の突進 +2",
           "type": "技",
           "cost": 5,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 1.736,
+          "line": 1,
+          "push": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ威力1.736倍の地響きを放つ（強化：威力+24%）",
+          "desc": "狙った敵と、その向こう1マスへ威力1.736倍で突進する。敵を押し流し、傷が深いほど強い（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -2849,15 +2296,17 @@
           "spirit": "vard",
           "route": "summon",
           "at": 20,
-          "name": "赤丘の地響き +3",
+          "name": "紅角の突進 +3",
           "type": "技",
           "cost": 5,
-          "target": "area",
+          "target": "enemy",
           "range": 3,
-          "radius": 1,
           "power": 1.904,
+          "line": 1,
+          "push": true,
+          "fury": true,
           "paint": 1,
-          "desc": "3マス先の周り1マスへ威力1.904倍の地響きを放つ（強化：威力+36%）",
+          "desc": "狙った敵と、その向こう1マスへ威力1.904倍で突進する。敵を押し流し、傷が深いほど強い（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -2883,14 +2332,14 @@
       "route": "summon",
       "at": 40,
       "name": "紅角の夜明け",
-      "type": "技",
+      "type": "スキル",
       "cost": 7,
-      "target": "area",
-      "range": 4,
-      "radius": 2,
-      "power": 1.55,
-      "paint": 2,
-      "desc": "周り2マスへ威力1.55倍の咆哮。果樹園の朝の色を呼び戻す",
+      "target": "ally",
+      "range": 1,
+      "heal": 0.3,
+      "fury": true,
+      "paint": 1,
+      "desc": "自分か隣の味方を30%回復する。その人の傷が深いほど、回復が大きい",
       "levels": [
         {
           "id": "vard_dawn",
@@ -2898,14 +2347,14 @@
           "route": "summon",
           "at": 40,
           "name": "紅角の夜明け",
-          "type": "技",
+          "type": "スキル",
           "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.55,
-          "paint": 2,
-          "desc": "周り2マスへ威力1.55倍の咆哮。果樹園の朝の色を呼び戻す",
+          "target": "ally",
+          "range": 1,
+          "heal": 0.3,
+          "fury": true,
+          "paint": 1,
+          "desc": "自分か隣の味方を30%回復する。その人の傷が深いほど、回復が大きい",
           "upgrade": 0
         },
         {
@@ -2914,14 +2363,14 @@
           "route": "summon",
           "at": 40,
           "name": "紅角の夜明け +1",
-          "type": "技",
+          "type": "スキル",
           "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.736,
-          "paint": 2,
-          "desc": "周り2マスへ威力1.736倍の咆哮。果樹園の朝の色を呼び戻す（強化：威力+12%）",
+          "target": "ally",
+          "range": 1,
+          "heal": 0.35,
+          "fury": true,
+          "paint": 1,
+          "desc": "自分か隣の味方を35%回復する。その人の傷が深いほど、回復が大きい（強化：回復35%）",
           "upgrade": 1
         },
         {
@@ -2930,14 +2379,14 @@
           "route": "summon",
           "at": 40,
           "name": "紅角の夜明け +2",
-          "type": "技",
+          "type": "スキル",
           "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 1.922,
-          "paint": 2,
-          "desc": "周り2マスへ威力1.922倍の咆哮。果樹園の朝の色を呼び戻す（強化：威力+24%）",
+          "target": "ally",
+          "range": 1,
+          "heal": 0.4,
+          "fury": true,
+          "paint": 1,
+          "desc": "自分か隣の味方を40%回復する。その人の傷が深いほど、回復が大きい（強化：回復40%）",
           "upgrade": 2
         },
         {
@@ -2946,14 +2395,14 @@
           "route": "summon",
           "at": 40,
           "name": "紅角の夜明け +3",
-          "type": "技",
+          "type": "スキル",
           "cost": 7,
-          "target": "area",
-          "range": 4,
-          "radius": 2,
-          "power": 2.108,
-          "paint": 2,
-          "desc": "周り2マスへ威力2.108倍の咆哮。果樹園の朝の色を呼び戻す（強化：威力+36%）",
+          "target": "ally",
+          "range": 1,
+          "heal": 0.45,
+          "fury": true,
+          "paint": 1,
+          "desc": "自分か隣の味方を45%回復する。その人の傷が深いほど、回復が大きい（強化：回復45%）",
           "upgrade": 3
         }
       ],
@@ -2984,8 +2433,10 @@
       "target": "enemy",
       "range": 2,
       "power": 1.1,
+      "line": 1,
+      "selfWind": 2,
       "paint": 1,
-      "desc": "2マス先へ必中の風の刃。周り1マスを虹に戻す",
+      "desc": "2マス先の敵と、その向こう1マスへ風の刃。威力1.1倍。あと2ターン、自分の移動+1",
       "levels": [
         {
           "id": "mari_feather",
@@ -2998,8 +2449,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.1,
+          "line": 1,
+          "selfWind": 2,
           "paint": 1,
-          "desc": "2マス先へ必中の風の刃。周り1マスを虹に戻す",
+          "desc": "2マス先の敵と、その向こう1マスへ風の刃。威力1.1倍。あと2ターン、自分の移動+1",
           "upgrade": 0
         },
         {
@@ -3013,8 +2466,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.232,
+          "line": 1,
+          "selfWind": 2,
           "paint": 1,
-          "desc": "2マス先へ必中の風の刃。周り1マスを虹に戻す（強化：威力+12%）",
+          "desc": "2マス先の敵と、その向こう1マスへ風の刃。威力1.232倍。あと2ターン、自分の移動+1（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -3028,8 +2483,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.364,
+          "line": 1,
+          "selfWind": 2,
           "paint": 1,
-          "desc": "2マス先へ必中の風の刃。周り1マスを虹に戻す（強化：威力+24%）",
+          "desc": "2マス先の敵と、その向こう1マスへ風の刃。威力1.364倍。あと2ターン、自分の移動+1（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -3043,8 +2500,10 @@
           "target": "enemy",
           "range": 2,
           "power": 1.496,
+          "line": 1,
+          "selfWind": 2,
           "paint": 1,
-          "desc": "2マス先へ必中の風の刃。周り1マスを虹に戻す（強化：威力+36%）",
+          "desc": "2マス先の敵と、その向こう1マスへ風の刃。威力1.496倍。あと2ターン、自分の移動+1（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -3073,11 +2532,11 @@
       "type": "スキル",
       "cost": 3,
       "target": "ally",
-      "range": 0,
+      "range": 1,
       "heal": 0.2,
       "wind": 2,
       "paint": 1,
-      "desc": "自分を20%回復。2ターン追い風で移動+1。宿した羽との重複はしない",
+      "desc": "自分か隣の味方を20%回復し、2ターン追い風で移動+1",
       "levels": [
         {
           "id": "mari_step",
@@ -3088,11 +2547,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.2,
           "wind": 2,
           "paint": 1,
-          "desc": "自分を20%回復。2ターン追い風で移動+1。宿した羽との重複はしない",
+          "desc": "自分か隣の味方を20%回復し、2ターン追い風で移動+1",
           "upgrade": 0
         },
         {
@@ -3104,11 +2563,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.25,
           "wind": 2,
           "paint": 1,
-          "desc": "自分を25%回復。2ターン追い風で移動+1。宿した羽との重複はしない（強化：回復25%・追い風2ターン）",
+          "desc": "自分か隣の味方を25%回復し、2ターン追い風で移動+1（強化：回復25%・追い風2ターン）",
           "upgrade": 1
         },
         {
@@ -3120,11 +2579,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.3,
           "wind": 3,
           "paint": 1,
-          "desc": "自分を30%回復。3ターン追い風で移動+1。宿した羽との重複はしない（強化：回復30%・追い風3ターン）",
+          "desc": "自分か隣の味方を30%回復し、3ターン追い風で移動+1（強化：回復30%・追い風3ターン）",
           "upgrade": 2
         },
         {
@@ -3136,11 +2595,11 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 0,
+          "range": 1,
           "heal": 0.35,
           "wind": 3,
           "paint": 1,
-          "desc": "自分を35%回復。3ターン追い風で移動+1。宿した羽との重複はしない（強化：回復35%・追い風3ターン）",
+          "desc": "自分か隣の味方を35%回復し、3ターン追い風で移動+1（強化：回復35%・追い風3ターン）",
           "upgrade": 3
         }
       ],
@@ -3170,9 +2629,10 @@
       "cost": 6,
       "target": "enemy",
       "range": 3,
-      "power": 1.8,
+      "power": 1.4,
+      "line": 2,
       "paint": 2,
-      "desc": "3マス先の敵へ威力1.8倍の斬撃。周り2マスを帰り道の色にする",
+      "desc": "3マス先の敵から、さらに2マス先まで風の刃が届く。威力1.4倍。通り道を虹に戻す",
       "levels": [
         {
           "id": "mari_edge",
@@ -3184,9 +2644,10 @@
           "cost": 6,
           "target": "enemy",
           "range": 3,
-          "power": 1.8,
+          "power": 1.4,
+          "line": 2,
           "paint": 2,
-          "desc": "3マス先の敵へ威力1.8倍の斬撃。周り2マスを帰り道の色にする",
+          "desc": "3マス先の敵から、さらに2マス先まで風の刃が届く。威力1.4倍。通り道を虹に戻す",
           "upgrade": 0
         },
         {
@@ -3199,9 +2660,10 @@
           "cost": 6,
           "target": "enemy",
           "range": 3,
-          "power": 2.016,
+          "power": 1.568,
+          "line": 2,
           "paint": 2,
-          "desc": "3マス先の敵へ威力2.016倍の斬撃。周り2マスを帰り道の色にする（強化：威力+12%）",
+          "desc": "3マス先の敵から、さらに2マス先まで風の刃が届く。威力1.568倍。通り道を虹に戻す（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -3214,9 +2676,10 @@
           "cost": 6,
           "target": "enemy",
           "range": 3,
-          "power": 2.232,
+          "power": 1.736,
+          "line": 2,
           "paint": 2,
-          "desc": "3マス先の敵へ威力2.232倍の斬撃。周り2マスを帰り道の色にする（強化：威力+24%）",
+          "desc": "3マス先の敵から、さらに2マス先まで風の刃が届く。威力1.736倍。通り道を虹に戻す（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -3229,9 +2692,10 @@
           "cost": 6,
           "target": "enemy",
           "range": 3,
-          "power": 2.448,
+          "power": 1.904,
+          "line": 2,
           "paint": 2,
-          "desc": "3マス先の敵へ威力2.448倍の斬撃。周り2マスを帰り道の色にする（強化：威力+36%）",
+          "desc": "3マス先の敵から、さらに2マス先まで風の刃が届く。威力1.904倍。通り道を虹に戻す（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -3260,11 +2724,10 @@
       "type": "スキル",
       "cost": 3,
       "target": "ally",
-      "range": 3,
-      "heal": 0.2,
-      "wind": 2,
+      "range": 4,
+      "heal": 0.35,
       "paint": 1,
-      "desc": "味方1人を20%回復。2ターン追い風で移動+1",
+      "desc": "離れた味方一人を35%回復する。追い風は付かない",
       "levels": [
         {
           "id": "mari_breeze",
@@ -3275,11 +2738,10 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 3,
-          "heal": 0.2,
-          "wind": 2,
+          "range": 4,
+          "heal": 0.35,
           "paint": 1,
-          "desc": "味方1人を20%回復。2ターン追い風で移動+1",
+          "desc": "離れた味方一人を35%回復する。追い風は付かない",
           "upgrade": 0
         },
         {
@@ -3291,11 +2753,10 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 3,
-          "heal": 0.25,
-          "wind": 2,
+          "range": 4,
+          "heal": 0.4,
           "paint": 1,
-          "desc": "味方1人を25%回復。2ターン追い風で移動+1（強化：回復25%・追い風2ターン）",
+          "desc": "離れた味方一人を40%回復する。追い風は付かない（強化：回復40%）",
           "upgrade": 1
         },
         {
@@ -3307,11 +2768,10 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 3,
-          "heal": 0.3,
-          "wind": 3,
+          "range": 4,
+          "heal": 0.45,
           "paint": 1,
-          "desc": "味方1人を30%回復。3ターン追い風で移動+1（強化：回復30%・追い風3ターン）",
+          "desc": "離れた味方一人を45%回復する。追い風は付かない（強化：回復45%）",
           "upgrade": 2
         },
         {
@@ -3323,11 +2783,10 @@
           "type": "スキル",
           "cost": 3,
           "target": "ally",
-          "range": 3,
-          "heal": 0.35,
-          "wind": 3,
+          "range": 4,
+          "heal": 0.5,
           "paint": 1,
-          "desc": "味方1人を35%回復。3ターン追い風で移動+1（強化：回復35%・追い風3ターン）",
+          "desc": "離れた味方一人を50%回復する。追い風は付かない（強化：回復50%）",
           "upgrade": 3
         }
       ],
@@ -3359,8 +2818,9 @@
       "range": 3,
       "radius": 1,
       "power": 0.9,
+      "allyWind": 2,
       "paint": 2,
-      "desc": "周り1マスの敵を風で打ち、周り2マスを虹に戻す",
+      "desc": "周り1マスの敵を威力0.9倍の風で打ち、その範囲の味方に2ターン追い風を送る",
       "levels": [
         {
           "id": "mari_ring",
@@ -3374,8 +2834,9 @@
           "range": 3,
           "radius": 1,
           "power": 0.9,
+          "allyWind": 2,
           "paint": 2,
-          "desc": "周り1マスの敵を風で打ち、周り2マスを虹に戻す",
+          "desc": "周り1マスの敵を威力0.9倍の風で打ち、その範囲の味方に2ターン追い風を送る",
           "upgrade": 0
         },
         {
@@ -3390,8 +2851,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.008,
+          "allyWind": 2,
           "paint": 2,
-          "desc": "周り1マスの敵を風で打ち、周り2マスを虹に戻す（強化：威力+12%）",
+          "desc": "周り1マスの敵を威力1.008倍の風で打ち、その範囲の味方に2ターン追い風を送る（強化：威力+12%）",
           "upgrade": 1
         },
         {
@@ -3406,8 +2868,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.116,
+          "allyWind": 2,
           "paint": 2,
-          "desc": "周り1マスの敵を風で打ち、周り2マスを虹に戻す（強化：威力+24%）",
+          "desc": "周り1マスの敵を威力1.116倍の風で打ち、その範囲の味方に2ターン追い風を送る（強化：威力+24%）",
           "upgrade": 2
         },
         {
@@ -3422,8 +2885,9 @@
           "range": 3,
           "radius": 1,
           "power": 1.224,
+          "allyWind": 2,
           "paint": 2,
-          "desc": "周り1マスの敵を風で打ち、周り2マスを虹に戻す（強化：威力+36%）",
+          "desc": "周り1マスの敵を威力1.224倍の風で打ち、その範囲の味方に2ターン追い風を送る（強化：威力+36%）",
           "upgrade": 3
         }
       ],
@@ -3457,7 +2921,7 @@
       "heal": 0.35,
       "wind": 3,
       "paint": 2,
-      "desc": "味方と周り2マスを35%回復。3ターン追い風で移動+1",
+      "desc": "味方と周り2マスを35%回復し、3ターン追い風で移動+1",
       "levels": [
         {
           "id": "mari_song",
@@ -3473,7 +2937,7 @@
           "heal": 0.35,
           "wind": 3,
           "paint": 2,
-          "desc": "味方と周り2マスを35%回復。3ターン追い風で移動+1",
+          "desc": "味方と周り2マスを35%回復し、3ターン追い風で移動+1",
           "upgrade": 0
         },
         {
@@ -3490,7 +2954,7 @@
           "heal": 0.4,
           "wind": 3,
           "paint": 2,
-          "desc": "味方と周り2マスを40%回復。3ターン追い風で移動+1（強化：回復40%・追い風3ターン）",
+          "desc": "味方と周り2マスを40%回復し、3ターン追い風で移動+1（強化：回復40%・追い風3ターン）",
           "upgrade": 1
         },
         {
@@ -3507,7 +2971,7 @@
           "heal": 0.45,
           "wind": 4,
           "paint": 2,
-          "desc": "味方と周り2マスを45%回復。4ターン追い風で移動+1（強化：回復45%・追い風4ターン）",
+          "desc": "味方と周り2マスを45%回復し、4ターン追い風で移動+1（強化：回復45%・追い風4ターン）",
           "upgrade": 2
         },
         {
@@ -3524,7 +2988,7 @@
           "heal": 0.5,
           "wind": 4,
           "paint": 2,
-          "desc": "味方と周り2マスを50%回復。4ターン追い風で移動+1（強化：回復50%・追い風4ターン）",
+          "desc": "味方と周り2マスを50%回復し、4ターン追い風で移動+1（強化：回復50%・追い風4ターン）",
           "upgrade": 3
         }
       ],
@@ -3584,6 +3048,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 1,
@@ -3708,6 +3173,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 1,
@@ -3724,7 +3190,7 @@
             {
               "kind": "shade",
               "lv": 2,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -3761,7 +3227,7 @@
             {
               "kind": "shade",
               "lv": 3,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -3798,7 +3264,7 @@
             {
               "kind": "shade",
               "lv": 5,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4033,12 +3499,12 @@
             {
               "kind": "lead",
               "lv": 7,
-              "n": 4
+              "n": 3
             },
             {
               "kind": "shade",
               "lv": 7,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4071,12 +3537,12 @@
             {
               "kind": "lead",
               "lv": 8,
-              "n": 4
+              "n": 3
             },
             {
               "kind": "shade",
               "lv": 8,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4109,12 +3575,12 @@
             {
               "kind": "lead",
               "lv": 10,
-              "n": 4
+              "n": 3
             },
             {
               "kind": "shade",
               "lv": 10,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4206,7 +3672,7 @@
             {
               "kind": "lead",
               "lv": 10,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4249,7 +3715,7 @@
             {
               "kind": "lead",
               "lv": 11,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4292,7 +3758,7 @@
             {
               "kind": "lead",
               "lv": 13,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -4332,7 +3798,7 @@
         "rows": 10,
         "cols": 10
       },
-      "par": 9,
+      "par": 12,
       "beacons": 0,
       "spStart": 6,
       "firstGold": null,
@@ -4340,22 +3806,21 @@
       "missions": [
         {
           "type": "turns",
-          "n": 10
+          "n": 14
         },
         {
           "type": "noDown"
         },
         {
           "type": "rainbow",
-          "n": 60
+          "n": 50
         }
       ],
       "companionsByStory": false,
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -4498,8 +3963,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -4657,8 +4121,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -4817,8 +4280,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -4977,8 +4439,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -4996,7 +4457,7 @@
             {
               "kind": "membrane",
               "lv": 21,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -5035,7 +4496,7 @@
             {
               "kind": "membrane",
               "lv": 22,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -5073,7 +4534,7 @@
             {
               "kind": "membrane",
               "lv": 24,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -5136,8 +4597,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -5295,8 +4755,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -5309,17 +4768,17 @@
             {
               "kind": "shade",
               "lv": 25,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "lead",
               "lv": 25,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
               "lv": 25,
-              "n": 2
+              "n": 3
             }
           ],
           "rewards": {
@@ -5353,17 +4812,17 @@
             {
               "kind": "shade",
               "lv": 26,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "lead",
               "lv": 26,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
               "lv": 26,
-              "n": 2
+              "n": 3
             }
           ],
           "rewards": {
@@ -5396,17 +4855,17 @@
             {
               "kind": "shade",
               "lv": 28,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "lead",
               "lv": 28,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
               "lv": 28,
-              "n": 2
+              "n": 3
             }
           ],
           "rewards": {
@@ -5470,8 +4929,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -5489,7 +4947,7 @@
             {
               "kind": "membrane",
               "lv": 27,
-              "n": 4
+              "n": 3
             }
           ],
           "rewards": {
@@ -5528,7 +4986,7 @@
             {
               "kind": "membrane",
               "lv": 28,
-              "n": 4
+              "n": 3
             }
           ],
           "rewards": {
@@ -5566,7 +5024,7 @@
             {
               "kind": "membrane",
               "lv": 30,
-              "n": 4
+              "n": 3
             }
           ],
           "rewards": {
@@ -5630,8 +5088,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -5898,290 +5355,6 @@
           "materials": {
             "m_dust": 4,
             "m_teal": 3
-          },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
-          "rewardScale": 1.5
-        }
-      }
-    },
-    {
-      "id": "gp_tokinel",
-      "title": "街外れの時計橋・影を払う道",
-      "act": "第二幕",
-      "description": "影を払い、汚染された精霊へ辿り着く通常戦。",
-      "group": "main",
-      "postgame": false,
-      "boss": false,
-      "guardian": null,
-      "gate": "act2",
-      "requiredCompanions": [],
-      "bossHP": 1,
-      "bossShield": false,
-      "hardOnly": false,
-      "board": {
-        "rows": 8,
-        "cols": 8
-      },
-      "beacons": 0,
-      "spStart": 3,
-      "firstGold": 140,
-      "missionGuide": null,
-      "missions": [
-        {
-          "type": "turns",
-          "n": 12
-        },
-        {
-          "type": "hp",
-          "n": 45
-        },
-        {
-          "type": "rainbow",
-          "n": 30
-        }
-      ],
-      "companionsByStory": false,
-      "spirits": [
-        "gran"
-      ],
-      "tiers": {
-        "gentle": {
-          "level": 3,
-          "enemies": [
-            {
-              "kind": "shade",
-              "lv": 3,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 3,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 2,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 1,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 2,
-            "m_gold": 1
-          },
-          "hpScale": 0.85,
-          "atkScale": 1,
-          "rewardScale": 0.8
-        },
-        "normal": {
-          "level": 4,
-          "enemies": [
-            {
-              "kind": "shade",
-              "lv": 4,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 4,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_gold": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 7,
-          "enemies": [
-            {
-              "kind": "shade",
-              "lv": 6,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 6,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1,
-              "i_shard": 1,
-              "i_ward": 1
-            },
-            "sEquipment": "a_wool",
-            "sItems": {},
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 4,
-            "m_gold": 3
-          },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
-          "rewardScale": 1.5
-        }
-      }
-    },
-    {
-      "id": "gb_tokinel",
-      "title": "時針のトキネル・穢れをほどく",
-      "act": "第二幕",
-      "description": "交互の目盛りが危険。虹に戻すと共鳴を奪われない。",
-      "group": "main",
-      "postgame": false,
-      "boss": true,
-      "guardian": "tokinel",
-      "gate": "act2",
-      "requiredCompanions": [],
-      "bossName": "汚染された時針のトキネル",
-      "bossHP": 1.05,
-      "bossShield": false,
-      "hardOnly": false,
-      "board": {
-        "rows": 8,
-        "cols": 8
-      },
-      "beacons": 0,
-      "spStart": 3,
-      "firstGold": 140,
-      "missionGuide": "交互の目盛りから離れ、グランを宿した心剣で影を2体倒そう。共鳴を奪われる前に宿すのが鍵。",
-      "missions": [
-        {
-          "type": "turns",
-          "n": 12
-        },
-        {
-          "type": "hp",
-          "n": 60
-        },
-        {
-          "type": "enchantKill",
-          "n": 2
-        }
-      ],
-      "companionsByStory": false,
-      "spirits": [
-        "gran"
-      ],
-      "tiers": {
-        "gentle": {
-          "level": 3,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 2,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 2,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 1,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 2,
-            "m_gold": 1
-          },
-          "hpScale": 0.85,
-          "atkScale": 1,
-          "rewardScale": 0.8
-        },
-        "normal": {
-          "level": 4,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 4
-            },
-            {
-              "kind": "shade",
-              "lv": 3,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_gold": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 7,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 6
-            },
-            {
-              "kind": "shade",
-              "lv": 5,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1,
-              "i_shard": 1,
-              "i_ward": 1
-            },
-            "sEquipment": "u_quest_clock",
-            "sItems": {},
-            "unique": true
-          },
-          "materials": {
-            "m_dust": 4,
-            "m_gold": 3
           },
           "hpScale": 1.15,
           "atkScale": 1.08,
@@ -6670,8 +5843,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -6817,8 +5989,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -6960,8 +6131,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7107,8 +6277,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7250,8 +6419,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7397,8 +6565,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7540,8 +6707,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7687,8 +6853,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7830,8 +6995,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -7977,8 +7141,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8120,8 +7283,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8267,8 +7429,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8410,8 +7571,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8557,8 +7717,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8700,8 +7859,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8847,8 +8005,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -8990,8 +8147,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -9137,8 +8293,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -9244,7 +8399,7 @@
       "id": "f_fruit",
       "title": "赤い果実の丘",
       "act": "第三幕・紅角の丘",
-      "description": "怒りを攻撃力へ変える猛牛。HPが減るほど攻撃が強まる。突進の予告線を避け、虹に戻した床から側面へ回ろう。",
+      "description": "妻子を失った怒りを、黒い声に命令へ変えられた紅い竜。HPが減るほど攻撃が強まる。突進の予告線を避け、虹に戻した床から側面へ回ろう。",
       "group": "free",
       "postgame": false,
       "boss": true,
@@ -9574,8 +8729,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -9721,8 +8875,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -9825,6 +8978,180 @@
       }
     },
     {
+      "id": "seam",
+      "title": "灰色の継ぎ目",
+      "act": "最終章",
+      "description": "時計の止まったテラ・コッタ。向こう側の闇が、継ぎ目を繋ぐ馨へ降り注いでいる。",
+      "group": "restoration",
+      "postgame": true,
+      "boss": true,
+      "guardian": "kaoru",
+      "gate": null,
+      "requiredCompanions": [],
+      "bossName": "闇の降り注ぐ馨",
+      "bossHP": 1.6,
+      "bossShield": false,
+      "hardOnly": false,
+      "board": {
+        "rows": 10,
+        "cols": 12
+      },
+      "beacons": 0,
+      "spStart": 6,
+      "firstGold": 900,
+      "missionGuide": "予告の床は時計の刻みのように毎ターンずれる。虹に戻して二人の守りを残し、背後から3回命中させよう。",
+      "missions": [
+        {
+          "type": "turns",
+          "n": 20
+        },
+        {
+          "type": "teamHP",
+          "n": 60
+        },
+        {
+          "type": "back",
+          "n": 3
+        }
+      ],
+      "companionsByStory": false,
+      "spirits": [
+        "gran",
+        "ivy",
+        "spinel"
+      ],
+      "tiers": {
+        "gentle": {
+          "level": 33,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 35
+            },
+            {
+              "kind": "membrane",
+              "lv": 31,
+              "n": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 31,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 31,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
+              "i_shard": 1,
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 1,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 2,
+            "m_violet": 1
+          },
+          "hpScale": 0.85,
+          "atkScale": 1,
+          "rewardScale": 0.8
+        },
+        "normal": {
+          "level": 34,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 36
+            },
+            {
+              "kind": "membrane",
+              "lv": 32,
+              "n": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 32,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 32,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1,
+          "atkScale": 1,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 37,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 38
+            },
+            {
+              "kind": "membrane",
+              "lv": 34,
+              "n": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 34,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 34,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
+              "i_shard": 1,
+              "i_ward": 1
+            },
+            "sEquipment": "u_sheath",
+            "sItems": {},
+            "unique": true
+          },
+          "materials": {
+            "m_dust": 4,
+            "m_violet": 3
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1.5
+        }
+      }
+    },
+    {
       "id": "f_mist",
       "title": "霧の浅瀬",
       "act": "フリーステージ",
@@ -9860,6 +9187,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 3,
@@ -9997,6 +9325,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 10,
@@ -10149,6 +9478,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 14,
@@ -10166,7 +9496,7 @@
             {
               "kind": "lead",
               "lv": 14,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
@@ -10209,7 +9539,7 @@
             {
               "kind": "lead",
               "lv": 15,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
@@ -10252,7 +9582,7 @@
             {
               "kind": "lead",
               "lv": 17,
-              "n": 2
+              "n": 1
             },
             {
               "kind": "thorn",
@@ -10316,6 +9646,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 21,
@@ -10328,12 +9659,12 @@
             {
               "kind": "lead",
               "lv": 21,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
               "lv": 21,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "shade",
@@ -10371,12 +9702,12 @@
             {
               "kind": "lead",
               "lv": 22,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
               "lv": 22,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "shade",
@@ -10414,12 +9745,12 @@
             {
               "kind": "lead",
               "lv": 24,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
               "lv": 24,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "shade",
@@ -10482,6 +9813,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 1,
@@ -10604,6 +9936,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 3,
@@ -10740,6 +10073,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 4,
@@ -10842,7 +10176,7 @@
       "id": "q_clock",
       "title": "止まった小さな時計",
       "act": "サブクエスト",
-      "description": "時計の針に、言えなかった謝罪が絡みついている。透明の一閃で、重なった影をほどこう。",
+      "description": "時計の針に、言えなかった謝罪が絡みついている。覚えた貫く技で、重なった影をほどこう。",
       "group": "quest",
       "postgame": false,
       "boss": false,
@@ -10874,6 +10208,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 5,
@@ -11007,6 +10342,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 6,
@@ -11156,6 +10492,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 8,
@@ -11298,6 +10635,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 9,
@@ -11447,6 +10785,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 11,
@@ -11605,6 +10944,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 13,
@@ -11712,7 +11052,7 @@
       "id": "q_palette",
       "title": "城下町の色祭り",
       "act": "サブクエスト",
-      "description": "祭りの広場から、絵の具の色が消えはじめた。パレット王と一緒に、七色の道を取り戻そう。",
+      "description": "祭りの広場から、絵の具の色が消えはじめた。パレット王に託された双彩の王笏で、二つの色を同時に呼び、七色の道を取り戻そう。",
       "group": "quest",
       "postgame": false,
       "boss": false,
@@ -11732,9 +11072,8 @@
       "missionGuide": null,
       "missions": [
         {
-          "type": "spiritUse",
-          "spirit": "king",
-          "n": 2
+          "type": "doubleSummon",
+          "n": 1
         },
         {
           "type": "rainbow",
@@ -11745,6 +11084,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 15,
@@ -11865,17 +11205,13 @@
       "id": "q_stargarden",
       "title": "星の庭の色合わせ",
       "act": "サブクエスト",
-      "description": "星の庭で、色と色の響き合いを学ぶ。王から覚えた力を使い、穢れに隠れた光を見つけよう。",
+      "description": "星の庭で、色と色の響き合いを学ぶ。王は戦いには加わらない。精霊から覚えた技を使い、穢れに隠れた光を見つけよう。",
       "group": "quest",
       "postgame": false,
       "boss": true,
       "guardian": null,
       "gate": "finale",
       "requiredCompanions": [],
-      "bondNeed": {
-        "spirit": "king",
-        "n": 8
-      },
       "bossHP": 1,
       "bossShield": false,
       "hardOnly": false,
@@ -11890,8 +11226,7 @@
       "missions": [
         {
           "type": "skillUse",
-          "n": 2,
-          "spirit": "king"
+          "n": 2
         },
         {
           "type": "turns",
@@ -11903,6 +11238,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 17,
@@ -12055,6 +11391,7 @@
         }
       ],
       "companionsByStory": false,
+      "spirits": [],
       "tiers": {
         "gentle": {
           "level": 22,
@@ -12067,7 +11404,7 @@
             {
               "kind": "lead",
               "lv": 22,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12111,7 +11448,7 @@
             {
               "kind": "lead",
               "lv": 23,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12154,7 +11491,7 @@
             {
               "kind": "lead",
               "lv": 25,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12226,8 +11563,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -12240,7 +11576,7 @@
             {
               "kind": "shade",
               "lv": 16,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12284,7 +11620,7 @@
             {
               "kind": "shade",
               "lv": 17,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12327,7 +11663,7 @@
             {
               "kind": "shade",
               "lv": 19,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12401,8 +11737,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -12415,7 +11750,7 @@
             {
               "kind": "shade",
               "lv": 17,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12459,7 +11794,7 @@
             {
               "kind": "shade",
               "lv": 18,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12502,7 +11837,7 @@
             {
               "kind": "shade",
               "lv": 20,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -12575,8 +11910,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -12749,8 +12083,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -12924,8 +12257,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13099,8 +12431,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13273,8 +12604,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13448,8 +12778,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13622,8 +12951,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13796,8 +13124,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13815,7 +13142,7 @@
             {
               "kind": "thorn",
               "lv": 26,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -13859,7 +13186,7 @@
             {
               "kind": "thorn",
               "lv": 27,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -13902,7 +13229,7 @@
             {
               "kind": "thorn",
               "lv": 29,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -13971,8 +13298,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -13990,7 +13316,7 @@
             {
               "kind": "thorn",
               "lv": 27,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14034,7 +13360,7 @@
             {
               "kind": "thorn",
               "lv": 28,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14077,7 +13403,7 @@
             {
               "kind": "thorn",
               "lv": 30,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14146,8 +13472,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "gentle": {
@@ -14165,7 +13490,7 @@
             {
               "kind": "thorn",
               "lv": 29,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14209,7 +13534,7 @@
             {
               "kind": "thorn",
               "lv": 30,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14252,7 +13577,7 @@
             {
               "kind": "thorn",
               "lv": 32,
-              "n": 2
+              "n": 3
             },
             {
               "kind": "lead",
@@ -14320,8 +13645,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "hard": {
@@ -14335,7 +13659,7 @@
             {
               "kind": "lead",
               "lv": 31,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -14345,7 +13669,7 @@
             {
               "kind": "membrane",
               "lv": 31,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -14408,8 +13732,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "hard": {
@@ -14423,7 +13746,7 @@
             {
               "kind": "lead",
               "lv": 34,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -14433,7 +13756,7 @@
             {
               "kind": "membrane",
               "lv": 34,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -14496,8 +13819,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "hard": {
@@ -14511,7 +13833,7 @@
             {
               "kind": "lead",
               "lv": 37,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -14521,7 +13843,7 @@
             {
               "kind": "membrane",
               "lv": 37,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -14584,8 +13906,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "hard": {
@@ -14599,7 +13920,7 @@
             {
               "kind": "lead",
               "lv": 40,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -14609,7 +13930,7 @@
             {
               "kind": "membrane",
               "lv": 40,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -14672,8 +13993,7 @@
       "spirits": [
         "gran",
         "ivy",
-        "spinel",
-        "king"
+        "spinel"
       ],
       "tiers": {
         "hard": {
@@ -14687,7 +14007,7 @@
             {
               "kind": "lead",
               "lv": 43,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
@@ -14697,7 +14017,7 @@
             {
               "kind": "membrane",
               "lv": 43,
-              "n": 3
+              "n": 2
             }
           ],
           "rewards": {
@@ -14724,6 +14044,7 @@
   "guardians": [
     {
       "id": "gran",
+      "slot": 0,
       "name": "グラン・オーシャン",
       "legacy": true,
       "chapter": "act1",
@@ -14848,131 +14169,8 @@
       ]
     },
     {
-      "id": "tokinel",
-      "name": "時針のトキネル",
-      "chapter": "act2",
-      "place": "街外れの時計橋",
-      "from": "gran",
-      "lv": 4,
-      "town": "grey",
-      "pattern": "clock",
-      "effect": "sp",
-      "colour": "#d6d8f1",
-      "material": "m_gold",
-      "unique": "u_quest_clock",
-      "prelude": "翌朝、街外れの時計橋で針が同じ一秒を刻んでいた。馨の静かなチクタクとは違う、黒くざらついた音。橋の精霊の翼に、渡ってはいけないという命令が巻きついている。",
-      "returnLine": "針は次の一秒へ進んだ。馨の茶色い音を持ったまま、アリアは街を出た。",
-      "skills": [
-        "止まった目盛り",
-        "交差する秒針",
-        "動き出す時盤"
-      ],
-      "counter": "交互の目盛りが危険。虹に戻すと共鳴を奪われない。",
-      "lines": [
-        [
-          [
-            "トキネル",
-            "……ト、マ、レ……"
-          ],
-          [
-            "アリア",
-            "誰かが渡る時間まで、止められないよ。"
-          ]
-        ],
-        [
-          [
-            "トキネル",
-            "次の……一秒が、怖い"
-          ],
-          [
-            "アリア",
-            "怖くても、一緒に数える。ひとつ、ふたつ。"
-          ]
-        ],
-        [
-          [
-            "トキネル",
-            "外側の目盛りが鳴る。虹の道を歩いて"
-          ],
-          [
-            "アリア",
-            "あなたが選ぶ、次の一秒へ。"
-          ]
-        ]
-      ],
-      "freed": "待つことと、止めることは違ったんだね。橋を渡っていいよ。",
-      "art": "guardian_tokinel",
-      "pathId": "gp_tokinel",
-      "bossId": "gb_tokinel",
-      "act": "第二幕",
-      "phases": [
-        {
-          "name": "拒絶する声",
-          "mov": 1,
-          "rng": [
-            1,
-            1
-          ],
-          "power": 0.75,
-          "armor": 0,
-          "skill": "止まった目盛り",
-          "lines": [
-            [
-              "トキネル",
-              "……ト、マ、レ……"
-            ],
-            [
-              "アリア",
-              "誰かが渡る時間まで、止められないよ。"
-            ]
-          ]
-        },
-        {
-          "name": "ほどける記憶",
-          "mov": 2,
-          "rng": [
-            1,
-            2
-          ],
-          "power": 0.7,
-          "armor": 0,
-          "skill": "交差する秒針",
-          "lines": [
-            [
-              "トキネル",
-              "次の……一秒が、怖い"
-            ],
-            [
-              "アリア",
-              "怖くても、一緒に数える。ひとつ、ふたつ。"
-            ]
-          ]
-        },
-        {
-          "name": "帰ってきた理性",
-          "mov": 2,
-          "rng": [
-            1,
-            3
-          ],
-          "power": 0.6,
-          "armor": 0,
-          "skill": "動き出す時盤",
-          "lines": [
-            [
-              "トキネル",
-              "外側の目盛りが鳴る。虹の道を歩いて"
-            ],
-            [
-              "アリア",
-              "あなたが選ぶ、次の一秒へ。"
-            ]
-          ]
-        }
-      ]
-    },
-    {
       "id": "ivy",
+      "slot": 2,
       "name": "シルキー・アイビー",
       "legacy": true,
       "chapter": "act3",
@@ -15098,6 +14296,7 @@
     },
     {
       "id": "spinel",
+      "slot": 3,
       "name": "スピネル",
       "legacy": true,
       "chapter": "act4",
@@ -15223,6 +14422,7 @@
     },
     {
       "id": "king",
+      "slot": 4,
       "name": "パレット王",
       "legacy": true,
       "chapter": "act5",
@@ -15348,6 +14548,7 @@
     },
     {
       "id": "nephra",
+      "slot": 5,
       "name": "夜渡りのネフラ",
       "chapter": "finale",
       "place": "王国へ届く最後の橋",
@@ -15472,6 +14673,7 @@
     },
     {
       "id": "farol",
+      "slot": 6,
       "name": "港灯のファロル",
       "chapter": "restore1",
       "place": "桟橋の灯台路",
@@ -15596,12 +14798,13 @@
     },
     {
       "id": "rivela",
+      "slot": 7,
       "name": "水紐のリヴェラ",
       "chapter": "restore2",
       "place": "水門前の分岐",
       "from": "restore2",
       "lv": 18,
-      "town": "grey",
+      "town": "aquamist",
       "pattern": "carp",
       "effect": "sp",
       "colour": "#91cddd",
@@ -15622,7 +14825,7 @@
             "……オナジ、ナミ……"
           ],
           [
-            "ルノワール",
+            "ノアール",
             "流れ先まで、同じにしなくていい。"
           ]
         ],
@@ -15669,7 +14872,7 @@
               "……オナジ、ナミ……"
             ],
             [
-              "ルノワール",
+              "ノアール",
               "流れ先まで、同じにしなくていい。"
             ]
           ]
@@ -15720,6 +14923,7 @@
     },
     {
       "id": "pomela",
+      "slot": 8,
       "name": "苗耳のポメラ",
       "chapter": "restore3",
       "place": "果樹園の苗道",
@@ -15844,12 +15048,13 @@
     },
     {
       "id": "folio",
+      "slot": 9,
       "name": "紙翼のフォリオ",
       "chapter": "restore4",
       "place": "記録院の外階段",
       "from": "restore4",
       "lv": 22,
-      "town": "grey",
+      "town": "rainbow",
       "pattern": "crane",
       "effect": "unguard",
       "colour": "#d2c6f1",
@@ -15968,6 +15173,7 @@
     },
     {
       "id": "fiamma",
+      "slot": 10,
       "name": "炉火のフィアンマ",
       "chapter": "restore5",
       "place": "家の丘の石段",
@@ -16092,6 +15298,7 @@
     },
     {
       "id": "lucerna",
+      "slot": 11,
       "name": "灯翅のルチェルナ",
       "chapter": "restore6",
       "place": "広場へ続く小路",
@@ -16216,6 +15423,7 @@
     },
     {
       "id": "coronel",
+      "slot": 12,
       "name": "冠枝のコロネル",
       "chapter": "restore7",
       "place": "天測回廊の入口",
@@ -16340,6 +15548,7 @@
     },
     {
       "id": "aster",
+      "slot": 13,
       "name": "星璃のアステル",
       "chapter": "restore8",
       "place": "観測塔の外周",
@@ -16366,7 +15575,7 @@
             "……ゴサ、ゼロ……ゴサ……"
           ],
           [
-            "ルノワール",
+            "ノアール",
             "測れなかった色も、そこにある。"
           ]
         ],
@@ -16413,7 +15622,7 @@
               "……ゴサ、ゼロ……ゴサ……"
             ],
             [
-              "ルノワール",
+              "ノアール",
               "測れなかった色も、そこにある。"
             ]
           ]
@@ -16477,7 +15686,7 @@
       "material": "m_gold",
       "pattern": "charge",
       "effect": "push",
-      "counter": "怒りを攻撃力へ変える猛牛。HPが減るほど攻撃が強まる。突進の予告線を避け、虹に戻した床から側面へ回ろう。",
+      "counter": "妻子を失った怒りを、黒い声に命令へ変えられた紅い竜。HPが減るほど攻撃が強まる。突進の予告線を避け、虹に戻した床から側面へ回ろう。",
       "skills": [
         "盲目の紅角",
         "二筋の憤怒",
@@ -16487,17 +15696,17 @@
         [
           [
             "ヴァルド",
-            "壊せ……全部、壊せ……！"
+            "返せ……なぜ奪った……全部、壊せ……！"
           ],
           [
             "アリア",
-            "角は果樹を避けている。まだ、守りたいものが残ってる。"
+            "怒っていいよ。それだけ大切だったんでしょう。"
           ]
         ],
         [
           [
             "ヴァルド",
-            "枝を折るな……その木は、あいつが……！"
+            "枝を折るな……その木は、ルベラが……！"
           ],
           [
             "アリア",
@@ -16507,15 +15716,15 @@
         [
           [
             "ヴァルド",
-            "俺が踏んでいたのか。守るはずの、この丘を。"
+            "俺が踏んでいたのか。あいつが植えた、この丘を。"
           ],
           [
             "アリア",
-            "怒っていい。誰に、その力を向けるかは選べる。"
+            "怒りは消さなくていい。誰に向けるかは、あなたが選べる。"
           ]
         ]
       ],
-      "freed": "怒りは消えていない。だからこそ、もう黒い声には使わせない。俺の角は、俺が向ける。",
+      "freed": "怒りは消えていない。燃やし尽くす火じゃなく、生きるための火にする。俺の角は、俺が向ける。",
       "phases": [
         {
           "name": "拒絶する声",
@@ -16530,11 +15739,11 @@
           "lines": [
             [
               "ヴァルド",
-              "壊せ……全部、壊せ……！"
+              "返せ……なぜ奪った……全部、壊せ……！"
             ],
             [
               "アリア",
-              "角は果樹を避けている。まだ、守りたいものが残ってる。"
+              "怒っていいよ。それだけ大切だったんでしょう。"
             ]
           ]
         },
@@ -16551,7 +15760,7 @@
           "lines": [
             [
               "ヴァルド",
-              "枝を折るな……その木は、あいつが……！"
+              "枝を折るな……その木は、ルベラが……！"
             ],
             [
               "アリア",
@@ -16572,11 +15781,11 @@
           "lines": [
             [
               "ヴァルド",
-              "俺が踏んでいたのか。守るはずの、この丘を。"
+              "俺が踏んでいたのか。あいつが植えた、この丘を。"
             ],
             [
               "アリア",
-              "怒っていい。誰に、その力を向けるかは選べる。"
+              "怒りは消さなくていい。誰に向けるかは、あなたが選べる。"
             ]
           ]
         }
@@ -16701,6 +15910,130 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kaoru",
+      "name": "馨",
+      "art": "kaoru",
+      "pattern": "clock",
+      "effect": "unguard",
+      "colour": "#b9aea4",
+      "material": "m_core",
+      "phaseNames": [
+        "降り注ぐ向こうの闇",
+        "ほどける灰色",
+        "チクタクの止まる音"
+      ],
+      "skills": [
+        "向こうの闇",
+        "遅れていく時報",
+        "切り離す前の一秒"
+      ],
+      "hpLabel": "降り注いだ闇HP",
+      "counter": "時計の刻みのように、市松の予告床が毎ターンずれる。予告の床を虹に戻せば防げる。HPは馨ではなく、降り注いだ向こうの闇の厚さ。",
+      "lines": [
+        [
+          [
+            "馨",
+            "離れて……ください。これは、僕が、連れてきたものだ"
+          ],
+          [
+            "アリア",
+            "知ってる。だから、来た。降ってきた闇だけを切る"
+          ]
+        ],
+        [
+          [
+            "馨",
+            "写して、回して、また写して……消えたかった夜に、ここへ落ちた"
+          ],
+          [
+            "アリア",
+            "その言葉は、あなたの上に積もったもの。あなたの字じゃない"
+          ]
+        ],
+        [
+          [
+            "馨",
+            "三杯目は……誰の分だったんだろう"
+          ],
+          [
+            "アリア",
+            "あとで書いて。あなたの言葉で"
+          ]
+        ]
+      ],
+      "freed": "チクタクが、止まった。……静かですね。こんなに静かなのは、初めてだ。",
+      "freedReply": "降り注いだ闇だけ、切り分けた。あなたの茶色は、残ってる。",
+      "chapter": "seam",
+      "bossId": "seam",
+      "town": "grey",
+      "lv": 34,
+      "phases": [
+        {
+          "name": "降り注ぐ向こうの闇",
+          "mov": 1,
+          "rng": [
+            1,
+            1
+          ],
+          "power": 0.75,
+          "armor": 0,
+          "skill": "向こうの闇",
+          "lines": [
+            [
+              "馨",
+              "離れて……ください。これは、僕が、連れてきたものだ"
+            ],
+            [
+              "アリア",
+              "知ってる。だから、来た。降ってきた闇だけを切る"
+            ]
+          ]
+        },
+        {
+          "name": "ほどける灰色",
+          "mov": 2,
+          "rng": [
+            1,
+            2
+          ],
+          "power": 0.7,
+          "armor": 0,
+          "skill": "遅れていく時報",
+          "lines": [
+            [
+              "馨",
+              "写して、回して、また写して……消えたかった夜に、ここへ落ちた"
+            ],
+            [
+              "アリア",
+              "その言葉は、あなたの上に積もったもの。あなたの字じゃない"
+            ]
+          ]
+        },
+        {
+          "name": "チクタクの止まる音",
+          "mov": 2,
+          "rng": [
+            1,
+            3
+          ],
+          "power": 0.6,
+          "armor": 0,
+          "skill": "切り離す前の一秒",
+          "lines": [
+            [
+              "馨",
+              "三杯目は……誰の分だったんだろう"
+            ],
+            [
+              "アリア",
+              "あとで書いて。あなたの言葉で"
+            ]
+          ]
+        }
+      ]
     }
   ],
   "gear": [
@@ -16820,8 +16153,7 @@
       },
       "desc": "守り+8・HP+25",
       "sources": [
-        "gp_gran",
-        "gp_tokinel"
+        "gp_gran"
       ],
       "shops": [
         "grey",
@@ -17064,7 +16396,7 @@
         "crit": 15,
         "killSp": 2
       },
-      "lore": "星が光るための黒。ルノワールの中で灯った夜空の一粒。",
+      "lore": "星が光るための黒。ノアールの中で灯った夜空の一粒。",
       "desc": "会心+15%・倒すと共鳴+2",
       "sources": [
         "chrome",
@@ -17146,9 +16478,10 @@
         "flashCost": 1
       },
       "lore": "何も壊さない刃のための、何も隠さない鞘。",
-      "desc": "攻撃+34・透明の一閃の共鳴-1",
+      "desc": "攻撃+34・貫く技の共鳴-1",
       "sources": [
         "restore7",
+        "seam",
         "f_void"
       ],
       "shops": []
@@ -17212,9 +16545,8 @@
         "flashCost": 1
       },
       "lore": "謝罪の言葉とともに、時を刻みはじめた針。",
-      "desc": "透明の一閃の共鳴-1",
+      "desc": "貫く技の共鳴-1",
       "sources": [
-        "gb_tokinel",
         "rq_wheel"
       ],
       "shops": []
@@ -17561,10 +16893,10 @@
     },
     "m_violet": {
       "name": "虹彩の結晶",
-      "spirit": "king",
+      "spirit": "mari",
       "color": "#c4adff",
       "price": 85,
-      "desc": "パレット王の技を強化する素材",
+      "desc": "七色の光や羽の技を磨く強化素材",
       "source": "城・夜空・終盤の依頼・精霊のこだま・虹の城下町の店"
     },
     "m_core": {
@@ -17672,6 +17004,11 @@
       "title": "木漏れ日を妬む茨の檻"
     },
     {
+      "key": "fury",
+      "act": "第三幕・赤い丘",
+      "title": "怒りの向け先"
+    },
+    {
       "key": "act4",
       "act": "第四幕",
       "title": "黄金の傷跡"
@@ -17700,7 +17037,7 @@
       "bg": "teal",
       "bgm": "haruka",
       "act": "復興編 第1話",
-      "note": "ルノワールは、アリアから学んだ「その者の色を切らない」浄化を、自分の意志で剣へ託した。クロムと歩くことは、罪を許すこととは違う。"
+      "note": "ノアールは、アリアから学んだ「その者の色を切らない」浄化を、自分の意志で剣へ託した。クロムと歩くことは、罪を許すこととは違う。"
     },
     {
       "key": "restore2",
@@ -17796,7 +17133,7 @@
       "bg": "teal",
       "bgm": "haruka",
       "act": "復興編 第1話",
-      "note": "ルノワールは、アリアから学んだ「その者の色を切らない」浄化を、自分の意志で剣へ託した。クロムと歩くことは、罪を許すこととは違う。"
+      "note": "ノアールは、アリアから学んだ「その者の色を切らない」浄化を、自分の意志で剣へ託した。クロムと歩くことは、罪を許すこととは違う。"
     },
     {
       "key": "restore2",
@@ -17929,7 +17266,7 @@
     {
       "id": "grey",
       "type": "town",
-      "name": "灰色の街",
+      "name": "テラ・コッタ",
       "sub": "チクタクの音の街",
       "chapter": "act2",
       "x": 425,
@@ -17937,7 +17274,7 @@
       "shop": "grey",
       "bg": "cave_sky",
       "preset": "gray",
-      "desc": "時計の音ばかりが聞こえる街。角のカフェでは、カモミールが頼める。"
+      "desc": "時計の音ばかりが聞こえる、灰色の街。ここには切り分けるものがない。角のカフェでは、馨がカモミールを頼んでいる。"
     },
     {
       "id": "thorn",
@@ -18027,15 +17364,22 @@
       "chapter": "finale",
       "name": "黒い靄の奥",
       "sub": "終章",
-      "x": 895,
-      "y": 345,
+      "x": -135,
+      "y": 395,
       "theme": {
         "bg": "stars",
         "preset": "dark",
         "fx": "stars:0.6",
         "bgm": "fate"
       },
-      "desc": "ひとつだけ黒い靄のかかった場所。クロムが待っている。"
+      "desc": "アクアミストから見て、テラ・コッタと反対の、海の向こう。黒いヴェールに覆われた透明の王国クリスタリアで、クロムが待っている。",
+      "after": {
+        "done": {
+          "name": "クリスタリア",
+          "sub": "透明の王国・終章の戦場",
+          "desc": "アクアミストの海を挟んで、テラ・コッタの反対側にある透明の王国。十六年前、ここから水晶の揺りかごが海へ流され、アクアミストの浜に着いた。いまは、復興の途中。"
+        }
+      }
     },
     {
       "id": "nowhere",
@@ -18043,9 +17387,9 @@
       "chapter": "epilogue",
       "name": "色のない場所",
       "sub": "エピローグ",
-      "x": 955,
-      "y": 535,
-      "desc": "リラが話してくれた、伝承の場所。"
+      "x": -175,
+      "y": 270,
+      "desc": "リラが話してくれた、伝承の場所。海の向こうの、どんな色も拒まない国。"
     },
     {
       "id": "f_mist",
@@ -18059,13 +17403,22 @@
     },
     {
       "id": "f_fruit",
-      "type": "free",
-      "free": "f_fruit",
+      "type": "stage",
       "name": "赤い果実の丘",
-      "sub": "精霊ボス・憤怒",
+      "sub": "第三幕・赤い丘",
       "need": "act3",
       "x": 205,
-      "y": 175
+      "y": 175,
+      "board": "f_fruit",
+      "chapter": "fury",
+      "clearedBy": "vardbond",
+      "theme": {
+        "bg": "canyon",
+        "preset": "dusk",
+        "fx": "gold:0.4",
+        "bgm": "forest"
+      },
+      "desc": "折れた枝の積もる赤い丘。妻子を失った怒りを黒い声に命令へ変えられ、紅い竜の精霊が、守るはずの畑を踏み荒らしている。"
     },
     {
       "id": "f_maze",
@@ -18094,8 +17447,8 @@
       "name": "透明の回廊",
       "sub": "フリーステージ",
       "need": "done",
-      "x": 975,
-      "y": 225
+      "x": -95,
+      "y": 525
     }
   ],
   "difficulties": {
@@ -18942,16 +18295,16 @@
     },
     "chrome": {
       "hp": [
-        999,
-        0
+        60,
+        24
       ],
       "atk": [
         14,
         2.6
       ],
       "def": [
-        99,
-        0
+        4,
+        1.6
       ],
       "mov": 2,
       "jump": 2,
