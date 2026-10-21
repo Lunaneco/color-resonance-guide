@@ -1,6 +1,6 @@
 {
-  "version": "1.26.0",
-  "commit": "8ebdd324f14b7cb2db79d67ceef38d7a42150f14",
+  "version": "1.26.1",
+  "commit": "a380dedeb61f17fc50ac08dae74441fbb1b3036f",
   "campBattles": [
     {
       "id": "camp_port",
