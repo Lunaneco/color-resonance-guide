@@ -1,6 +1,6 @@
 {
-  "version": "1.25.0",
-  "commit": "d002d80ac339f128c1dbaa451e6505bac887e547",
+  "version": "1.26.0",
+  "commit": "8ebdd324f14b7cb2db79d67ceef38d7a42150f14",
   "campBattles": [
     {
       "id": "camp_port",
@@ -3239,6 +3239,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -3364,6 +3365,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -3516,6 +3518,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran"
       ],
@@ -3674,6 +3677,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy"
@@ -3836,6 +3840,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -4008,6 +4013,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -4151,6 +4157,20 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -4309,6 +4329,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "membrane",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -4468,6 +4497,19 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "実を落とした核",
+          "line": "核が、腐った実を落として軽くなった",
+          "summon": {
+            "kind": "thorn",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -4627,6 +4669,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 4,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "頁を綴じ直した核",
+          "line": "核が、破れた頁を黒く綴じ直した"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -4785,6 +4848,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "membrane",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "charge": {
+          "turn": 3
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -4943,6 +5018,37 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "far",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "広場を塗りこめた核",
+          "line": "核が、広場の色をもう一度塗りつぶした"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -5117,6 +5223,26 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "天測を狂わせた核",
+          "line": "核が、星の位置をずらして立ち上がった",
+          "summon": {
+            "kind": "membrane",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -5276,6 +5402,48 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "membrane",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "向こう側を映した核",
+          "line": "核が、レンズの奥の灰色を映して立ち上がった",
+          "summon": {
+            "kind": "shade",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -5449,6 +5617,20 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -5590,6 +5772,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran"
       ],
@@ -5737,6 +5928,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 1
+              },
+              {
+                "kind": "shade",
+                "n": 1
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy"
@@ -5886,6 +6098,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 1,
+            "near": 2
+          }
+        ],
+        "waves": [
+          {
+            "turn": 4,
+            "from": "far",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -6031,6 +6264,37 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 1,
+            "near": 3
+          }
+        ],
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -6177,6 +6441,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -6319,6 +6584,20 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -6465,6 +6744,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -6607,6 +6887,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "membrane",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -6753,6 +7042,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -6895,6 +7185,23 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "far",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -7041,6 +7348,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -7183,6 +7491,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -7329,6 +7646,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -7471,6 +7789,23 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "charge": {
+          "turn": 3
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -7617,6 +7952,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -7759,6 +8095,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "membrane",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "waves": [
+          {
+            "turn": 4,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -7905,6 +8262,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -8047,6 +8405,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -8193,6 +8563,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -8335,6 +8706,37 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "membrane",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 1,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -8481,6 +8883,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -8624,6 +9027,7 @@
         }
       ],
       "companionsByStory": true,
+      "tactics": null,
       "spirits": [
         "gran"
       ],
@@ -8777,6 +9181,23 @@
         }
       ],
       "companionsByStory": true,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran"
       ],
@@ -8917,6 +9338,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -9063,6 +9485,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -9206,6 +9629,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [
         "gran",
         "ivy",
@@ -9379,6 +9803,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -9546,6 +9971,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "s_sword",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy"
@@ -9719,6 +10153,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "captain",
+          "hp": 0.5,
+          "atk": 1.15,
+          "name": "黒の外套",
+          "line": "……まだ、門は閉じている"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -9911,6 +10354,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10049,6 +10493,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10202,6 +10655,30 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "far",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10370,6 +10847,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10537,6 +11026,7 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": null,
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10660,6 +11150,20 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10797,6 +11301,30 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -10932,6 +11460,11 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        }
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11066,6 +11599,19 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "苦い殻を割った核",
+          "line": "苦い実の核が、黒い蔓をまとって起き上がった",
+          "summon": {
+            "kind": "thorn",
+            "n": 1
+          }
+        }
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11216,6 +11762,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11359,6 +11914,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        },
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 1,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11509,6 +12076,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "鉛をまとった核",
+          "line": "核が、橋の鉛を吸い上げて立ち上がった"
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 1
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11668,6 +12256,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 1,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11808,6 +12408,30 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -11962,6 +12586,26 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "星を呑んだ核",
+          "line": "核が、庭の星を一つ呑みこんだ",
+          "summon": {
+            "kind": "thorn",
+            "n": 1
+          }
+        },
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 1,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -12115,6 +12759,42 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "四つの声を重ねた核",
+          "line": "核が、四つの声で同時に叫んだ",
+          "summon": {
+            "kind": "shade",
+            "n": 2
+          }
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "far",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 1
+              },
+              {
+                "kind": "thorn",
+                "n": 1
+              }
+            ]
+          }
+        ],
+        "ambush": [
+          {
+            "kind": "shade",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [],
       "tiers": {
         "gentle": {
@@ -12284,6 +12964,20 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -12458,6 +13152,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -12631,6 +13334,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "井戸の底の核",
+          "line": "核が、井戸の水を黒く吸い上げた"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -12804,6 +13516,23 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -12978,6 +13707,22 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "名札を剥がした核",
+          "line": "核が、苗の名札を一枚ずつ剥がした"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -13152,6 +13897,30 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -13325,6 +14094,26 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "空白を広げた核",
+          "line": "核が、頁の空白を黒く広げた",
+          "summon": {
+            "kind": "shade",
+            "n": 2
+          }
+        },
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 1,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -13499,6 +14288,23 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 3
+        },
+        "waves": [
+          {
+            "turn": 4,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -13672,6 +14478,15 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 3,
+            "near": 2
+          }
+        ]
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -13845,6 +14660,27 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "far",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "鐘を割った核",
+          "line": "核が、割れた鐘の音で立ち上がった"
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14019,6 +14855,18 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "lead",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "charge": {
+          "turn": 3
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14193,6 +15041,41 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "観測を止めた核",
+          "line": "核が、最後の記録を黒く塗りつぶした",
+          "summon": {
+            "kind": "shade",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14366,6 +15249,48 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "membrane",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "深淵の核",
+          "line": "核が、深い潮をまとって浮かび上がった",
+          "summon": {
+            "kind": "membrane",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14453,6 +15378,29 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 3,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "樹海の核",
+          "line": "核が、千の蔓を編み直した",
+          "summon": {
+            "kind": "thorn",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14540,6 +15488,41 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "waves": [
+          {
+            "turn": 3,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "far",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "裂け谷の核",
+          "line": "核が、金屑を鎧にして立ち上がった",
+          "summon": {
+            "kind": "lead",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14627,6 +15610,38 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "ambush": [
+          {
+            "kind": "membrane",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "waves": [
+          {
+            "turn": 4,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "thorn",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "七針の核",
+          "line": "核が、七本の針を背に立てた",
+          "summon": {
+            "kind": "membrane",
+            "n": 2
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
@@ -14714,6 +15729,51 @@
         }
       ],
       "companionsByStory": false,
+      "tactics": {
+        "charge": {
+          "turn": 2
+        },
+        "waves": [
+          {
+            "turn": 3,
+            "from": "flank",
+            "units": [
+              {
+                "kind": "shade",
+                "n": 2
+              }
+            ]
+          },
+          {
+            "turn": 5,
+            "from": "rear",
+            "units": [
+              {
+                "kind": "lead",
+                "n": 2
+              }
+            ]
+          }
+        ],
+        "ambush": [
+          {
+            "kind": "thorn",
+            "n": 2,
+            "near": 2
+          }
+        ],
+        "second": {
+          "who": "boss",
+          "hp": 0.55,
+          "atk": 1.15,
+          "name": "宙を織る核",
+          "line": "核が、夜空の糸を黒く織り直した",
+          "summon": {
+            "kind": "shade",
+            "n": 3
+          }
+        }
+      },
       "spirits": [
         "gran",
         "ivy",
