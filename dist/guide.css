@@ -7,3 +7,14 @@
 @media print{header,.guide-hero-art,.menu-button,.filter-bar,.stage-list,.search-box,.index-grid,.tool-actions,button,.guide-end{display:none!important}body{background:white;color:#111}.guide-section{padding:20px}details{display:block}h2,h3,p,td,th{color:#111!important}.stage-detail{background:none}footer{color:#111}}
 
 .theory-grid>*,.mini-detail>*,.build-grid>*,.skill-cards>*,.story-timeline>*{min-width:0}.table-wrap{max-width:100%}
+
+.camp-sub{margin:2.2rem 0 .4rem}
+.camp-battles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1rem;margin-top:1rem}
+.camp-card{border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:1rem 1.1rem;background:rgba(255,255,255,.04)}
+.camp-card h4{margin:.2rem 0 .4rem;font-size:1.1rem}
+.camp-card h4 .text-link{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.guard-list{list-style:none;padding:0;margin:.8rem 0 0;display:grid;gap:.55rem}
+.guard-list li{border-left:4px solid var(--guard);padding:.35rem .7rem;background:rgba(0,0,0,.18);border-radius:0 8px 8px 0;display:grid;gap:.15rem}
+.guard-list li b{color:var(--guard)}
+.guard-list li span{font-size:.85rem;opacity:.85}
+.guard-list li q{font-size:.85rem;opacity:.8}

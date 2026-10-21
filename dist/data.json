@@ -1,6 +1,197 @@
 {
-  "version": "1.19.0",
-  "commit": "8779616e35fa5baeabae556be5064e02986ec4ad",
+  "version": "1.24.0",
+  "commit": "1aa8bccc416c499dac90fc13b31b8bc8e1431311",
+  "campBattles": [
+    {
+      "id": "camp_port",
+      "title": "港の黒い旗",
+      "act": "第一幕",
+      "town": "aquamist",
+      "lv": 3,
+      "desc": "船着き場の桟橋に、黒い旗が立てられた。桟橋の先の本陣には青のマリナ、丘の旗には藍のシオン。旗を一本ずつ取り返し、本陣の旗を奪う。",
+      "cp": 3,
+      "cpMax": 6,
+      "spawn": {
+        "kind": "s_lance",
+        "lv": 2
+      },
+      "size": [
+        13,
+        11
+      ],
+      "flags": {
+        "neutral": 2,
+        "enemy": 1
+      },
+      "sandbags": 4,
+      "guards": [
+        {
+          "id": "marina",
+          "name": "青のマリナ",
+          "color": "#7fb8ff",
+          "trait": "reach",
+          "post": "本陣",
+          "sight": "桟橋は、黒で揃える",
+          "freed": "……わたしの槍、こんなに青かったっけ"
+        },
+        {
+          "id": "sion",
+          "name": "藍のシオン",
+          "color": "#8f8cff",
+          "trait": "fog",
+          "post": "敵の旗",
+          "sight": "霧の奥から、全部見えてる",
+          "freed": "霧が、晴れていく……"
+        }
+      ]
+    },
+    {
+      "id": "camp_valley",
+      "title": "石の子の村の旗",
+      "act": "第四幕",
+      "town": "stone",
+      "lv": 8,
+      "desc": "石の子の村の屋根に、黒い旗が立っている。上の段の本陣には黄のオーカー、左の段の旗には橙のアンバー。旗を取り返して指揮点を増やし、本陣を奪う。",
+      "cp": 3,
+      "cpMax": 7,
+      "spawn": {
+        "kind": "s_lance",
+        "lv": 8
+      },
+      "size": [
+        13,
+        12
+      ],
+      "flags": {
+        "neutral": 4,
+        "enemy": 1
+      },
+      "sandbags": 6,
+      "guards": [
+        {
+          "id": "ocher",
+          "name": "黄のオーカー",
+          "color": "#ffd760",
+          "trait": "guard",
+          "post": "本陣",
+          "sight": "割れ目は、見せるな",
+          "freed": "盾が、軽い"
+        },
+        {
+          "id": "amber",
+          "name": "橙のアンバー",
+          "color": "#ffad60",
+          "trait": "might",
+          "post": "敵の旗",
+          "sight": "火を落とせ。温かいものは、全部黒に",
+          "freed": "……あったかい"
+        }
+      ]
+    },
+    {
+      "id": "camp_town",
+      "title": "城下町の黒い旗",
+      "act": "第五幕",
+      "town": "rainbow",
+      "lv": 11,
+      "desc": "広場から城門まで、黒い旗が並んでいる。城門には近衛の長、紫のヴィオラ。左右の通りの旗には赤のカーマインと緑のヴェルデ。騎兵は本陣を狙ってくる。",
+      "cp": 3,
+      "cpMax": 8,
+      "spawn": {
+        "kind": "s_lance",
+        "lv": 10
+      },
+      "size": [
+        13,
+        12
+      ],
+      "flags": {
+        "neutral": 3,
+        "enemy": 2
+      },
+      "sandbags": 5,
+      "guards": [
+        {
+          "id": "viola",
+          "name": "紫のヴィオラ",
+          "color": "#d6a8ff",
+          "trait": "lead",
+          "post": "本陣",
+          "sight": "この門は、通さない",
+          "freed": "剣を、収める"
+        },
+        {
+          "id": "carmine",
+          "name": "赤のカーマイン",
+          "color": "#ff8a8a",
+          "trait": "raid",
+          "post": "敵の旗",
+          "sight": "本陣ごと、踏みつぶす！",
+          "freed": "……止まれた"
+        },
+        {
+          "id": "verde",
+          "name": "緑のヴェルデ",
+          "color": "#8ee6a0",
+          "trait": "root",
+          "post": "敵の旗",
+          "sight": "芽は、摘む",
+          "freed": "土の匂いがする"
+        }
+      ]
+    }
+  ],
+  "rainbowGuard": [
+    {
+      "id": "marina",
+      "name": "青のマリナ",
+      "color": "#7fb8ff",
+      "trait": "reach",
+      "kind": "s_captain"
+    },
+    {
+      "id": "sion",
+      "name": "藍のシオン",
+      "color": "#8f8cff",
+      "trait": "fog",
+      "kind": "s_bow"
+    },
+    {
+      "id": "ocher",
+      "name": "黄のオーカー",
+      "color": "#ffd760",
+      "trait": "guard",
+      "kind": "s_captain"
+    },
+    {
+      "id": "amber",
+      "name": "橙のアンバー",
+      "color": "#ffad60",
+      "trait": "might",
+      "kind": "s_heavy"
+    },
+    {
+      "id": "viola",
+      "name": "紫のヴィオラ",
+      "color": "#d6a8ff",
+      "trait": "lead",
+      "kind": "s_captain"
+    },
+    {
+      "id": "carmine",
+      "name": "赤のカーマイン",
+      "color": "#ff8a8a",
+      "trait": "raid",
+      "kind": "s_cavalry"
+    },
+    {
+      "id": "verde",
+      "name": "緑のヴェルデ",
+      "color": "#8ee6a0",
+      "trait": "root",
+      "kind": "s_bow"
+    }
+  ],
   "spirits": {
     "gran": {
       "name": "グラン",
@@ -3102,8 +3293,8 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
@@ -3128,8 +3319,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -3213,44 +3404,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 2,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 4
-            },
-            {
-              "kind": "shade",
-              "lv": 2,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 3,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_teal": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 5,
+          "level": 4,
           "enemies": [
             {
               "kind": "boss",
@@ -3269,6 +3423,43 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_teal": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 7,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 8
+            },
+            {
+              "kind": "shade",
+              "lv": 6,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 7,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -3280,8 +3471,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -3367,44 +3558,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 5,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 7
-            },
-            {
-              "kind": "thorn",
-              "lv": 5,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 5,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_green": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 8,
+          "level": 7,
           "enemies": [
             {
               "kind": "boss",
@@ -3423,6 +3577,43 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_green": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 10,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 11
+            },
+            {
+              "kind": "thorn",
+              "lv": 9,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 9,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -3434,8 +3625,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -3527,45 +3718,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 8,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 10,
-              "armor": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 8,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 8,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_gold": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 11,
+          "level": 10,
           "enemies": [
             {
               "kind": "boss",
@@ -3585,6 +3738,44 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_gold": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 13,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 14,
+              "armor": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 12,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 12,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -3596,8 +3787,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -3695,50 +3886,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 11,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 13,
-              "armor": 2
-            },
-            {
-              "kind": "shade",
-              "lv": 11,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 11,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 11,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 14,
+          "level": 13,
           "enemies": [
             {
               "kind": "boss",
@@ -3763,6 +3911,49 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 16,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 17,
+              "armor": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 15,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 15,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 15,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -3774,8 +3965,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -3857,15 +4048,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "chrome",
-              "lv": 15
+              "lv": 17
             },
             {
               "kind": "membrane",
-              "lv": 13,
+              "lv": 15,
               "n": 6,
               "phase": 1
             }
@@ -3885,20 +4076,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 17,
+          "level": 19,
           "enemies": [
             {
               "kind": "chrome",
-              "lv": 17
+              "lv": 19
             },
             {
               "kind": "membrane",
-              "lv": 15,
+              "lv": 17,
               "n": 6,
               "phase": 1
             }
@@ -3916,8 +4107,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4006,45 +4197,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 16,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 17
-            },
-            {
-              "kind": "shade",
-              "lv": 16,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 16,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 19,
+          "level": 18,
           "enemies": [
             {
               "kind": "boss",
@@ -4064,6 +4217,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 21,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 21
+            },
+            {
+              "kind": "shade",
+              "lv": 20,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 20,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4075,8 +4266,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4164,45 +4355,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 18,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 19
-            },
-            {
-              "kind": "membrane",
-              "lv": 18,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 18,
-              "n": 3
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 21,
+          "level": 20,
           "enemies": [
             {
               "kind": "boss",
@@ -4222,6 +4375,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 23,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 23
+            },
+            {
+              "kind": "membrane",
+              "lv": 22,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 22,
+              "n": 3
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4233,8 +4424,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4323,45 +4514,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 20,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 21
-            },
-            {
-              "kind": "thorn",
-              "lv": 20,
-              "n": 4
-            },
-            {
-              "kind": "shade",
-              "lv": 20,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 23,
+          "level": 22,
           "enemies": [
             {
               "kind": "boss",
@@ -4381,6 +4534,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 25,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 25
+            },
+            {
+              "kind": "thorn",
+              "lv": 24,
+              "n": 4
+            },
+            {
+              "kind": "shade",
+              "lv": 24,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4392,8 +4583,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4482,45 +4673,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 23
-            },
-            {
-              "kind": "lead",
-              "lv": 22,
-              "n": 3
-            },
-            {
-              "kind": "membrane",
-              "lv": 22,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 25,
+          "level": 24,
           "enemies": [
             {
               "kind": "boss",
@@ -4540,6 +4693,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 27,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 27
+            },
+            {
+              "kind": "lead",
+              "lv": 26,
+              "n": 3
+            },
+            {
+              "kind": "membrane",
+              "lv": 26,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4551,8 +4742,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4640,45 +4831,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 24,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 25
-            },
-            {
-              "kind": "membrane",
-              "lv": 24,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 24,
-              "n": 3
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 27,
+          "level": 26,
           "enemies": [
             {
               "kind": "boss",
@@ -4698,6 +4851,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 29,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 29
+            },
+            {
+              "kind": "membrane",
+              "lv": 28,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 28,
+              "n": 3
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4709,8 +4900,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4803,50 +4994,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 26,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 27
-            },
-            {
-              "kind": "shade",
-              "lv": 26,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 26,
-              "n": 1
-            },
-            {
-              "kind": "thorn",
-              "lv": 26,
-              "n": 3
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 29,
+          "level": 28,
           "enemies": [
             {
               "kind": "boss",
@@ -4871,6 +5019,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 31,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 31
+            },
+            {
+              "kind": "shade",
+              "lv": 30,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 30,
+              "n": 1
+            },
+            {
+              "kind": "thorn",
+              "lv": 30,
+              "n": 3
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -4882,8 +5073,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -4972,45 +5163,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 28,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 29
-            },
-            {
-              "kind": "lead",
-              "lv": 28,
-              "n": 3
-            },
-            {
-              "kind": "membrane",
-              "lv": 28,
-              "n": 3
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 31,
+          "level": 30,
           "enemies": [
             {
               "kind": "boss",
@@ -5030,6 +5183,44 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 33,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 33
+            },
+            {
+              "kind": "lead",
+              "lv": 32,
+              "n": 3
+            },
+            {
+              "kind": "membrane",
+              "lv": 32,
+              "n": 3
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -5041,8 +5232,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5136,50 +5327,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 30,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 34
-            },
-            {
-              "kind": "membrane",
-              "lv": 30,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 30,
-              "n": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 30,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 33,
+          "level": 32,
           "enemies": [
             {
               "kind": "boss",
@@ -5204,6 +5352,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 35,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 38
+            },
+            {
+              "kind": "membrane",
+              "lv": 34,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 34,
+              "n": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 34,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -5215,8 +5406,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5295,16 +5486,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 2,
+          "level": 4,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 2,
+              "lv": 4,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 2,
+              "lv": 4,
               "n": 1
             }
           ],
@@ -5324,21 +5515,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 5,
+          "level": 7,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 4,
+              "lv": 6,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 4,
+              "lv": 6,
               "n": 1
             }
           ],
@@ -5356,8 +5547,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5438,16 +5629,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 5,
+          "level": 7,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 5,
+              "lv": 7,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 5,
+              "lv": 7,
               "n": 2
             }
           ],
@@ -5467,21 +5658,21 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 8,
+          "level": 10,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 7,
+              "lv": 9,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 7,
+              "lv": 9,
               "n": 2
             }
           ],
@@ -5499,8 +5690,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5586,16 +5777,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 8,
+          "level": 10,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 8,
+              "lv": 10,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 8,
+              "lv": 10,
               "n": 2
             }
           ],
@@ -5615,21 +5806,21 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 11,
+          "level": 13,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 10,
+              "lv": 12,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 10,
+              "lv": 12,
               "n": 2
             }
           ],
@@ -5647,8 +5838,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5736,16 +5927,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 11,
+          "level": 13,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 11,
+              "lv": 13,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 11,
+              "lv": 13,
               "n": 2
             }
           ],
@@ -5765,21 +5956,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 13,
+              "lv": 15,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 13,
+              "lv": 15,
               "n": 2
             }
           ],
@@ -5797,8 +5988,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -5881,16 +6072,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 14,
+              "lv": 16,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 14,
+              "lv": 16,
               "n": 2
             }
           ],
@@ -5910,21 +6101,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 17,
+          "level": 19,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 16,
+              "lv": 18,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 16,
+              "lv": 18,
               "n": 2
             }
           ],
@@ -5942,8 +6133,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6026,15 +6217,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 14
+              "lv": 16
             },
             {
               "kind": "shade",
-              "lv": 13,
+              "lv": 15,
               "n": 2
             }
           ],
@@ -6054,20 +6245,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 17,
+          "level": 19,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 16
+              "lv": 18
             },
             {
               "kind": "shade",
-              "lv": 15,
+              "lv": 17,
               "n": 2
             }
           ],
@@ -6085,8 +6276,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6169,16 +6360,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 16,
+          "level": 18,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 16,
+              "lv": 18,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 16,
+              "lv": 18,
               "n": 2
             }
           ],
@@ -6198,21 +6389,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 19,
+          "level": 21,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 18,
+              "lv": 20,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 18,
+              "lv": 20,
               "n": 2
             }
           ],
@@ -6230,8 +6421,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6314,15 +6505,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 16,
+          "level": 18,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 16
+              "lv": 18
             },
             {
               "kind": "shade",
-              "lv": 15,
+              "lv": 17,
               "n": 2
             }
           ],
@@ -6342,20 +6533,20 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 19,
+          "level": 21,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 18
+              "lv": 20
             },
             {
               "kind": "shade",
-              "lv": 17,
+              "lv": 19,
               "n": 2
             }
           ],
@@ -6373,8 +6564,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6457,16 +6648,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 18,
+          "level": 20,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 18,
+              "lv": 20,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 18,
+              "lv": 20,
               "n": 2
             }
           ],
@@ -6486,21 +6677,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 21,
+          "level": 23,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 20,
+              "lv": 22,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 20,
+              "lv": 22,
               "n": 2
             }
           ],
@@ -6518,8 +6709,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6602,15 +6793,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 18,
+          "level": 20,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 18
+              "lv": 20
             },
             {
               "kind": "shade",
-              "lv": 17,
+              "lv": 19,
               "n": 2
             }
           ],
@@ -6630,20 +6821,20 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 21,
+          "level": 23,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 20
+              "lv": 22
             },
             {
               "kind": "shade",
-              "lv": 19,
+              "lv": 21,
               "n": 2
             }
           ],
@@ -6661,8 +6852,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6745,16 +6936,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 20,
+          "level": 22,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 20,
+              "lv": 22,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 20,
+              "lv": 22,
               "n": 2
             }
           ],
@@ -6774,21 +6965,21 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 23,
+          "level": 25,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 22,
+              "lv": 24,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 22,
+              "lv": 24,
               "n": 2
             }
           ],
@@ -6806,8 +6997,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -6890,15 +7081,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 20,
+          "level": 22,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 20
+              "lv": 22
             },
             {
               "kind": "shade",
-              "lv": 19,
+              "lv": 21,
               "n": 2
             }
           ],
@@ -6918,20 +7109,20 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 23,
+          "level": 25,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 22
+              "lv": 24
             },
             {
               "kind": "shade",
-              "lv": 21,
+              "lv": 23,
               "n": 2
             }
           ],
@@ -6949,8 +7140,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7033,16 +7224,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
+          "level": 24,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 22,
+              "lv": 24,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 22,
+              "lv": 24,
               "n": 2
             }
           ],
@@ -7062,21 +7253,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 25,
+          "level": 27,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 24,
+              "lv": 26,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 24,
+              "lv": 26,
               "n": 2
             }
           ],
@@ -7094,8 +7285,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7178,15 +7369,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
+          "level": 24,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 22
+              "lv": 24
             },
             {
               "kind": "shade",
-              "lv": 21,
+              "lv": 23,
               "n": 2
             }
           ],
@@ -7206,20 +7397,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 25,
+          "level": 27,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 24
+              "lv": 26
             },
             {
               "kind": "shade",
-              "lv": 23,
+              "lv": 25,
               "n": 2
             }
           ],
@@ -7237,8 +7428,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7321,16 +7512,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 24,
+          "level": 26,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 24,
+              "lv": 26,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 24,
+              "lv": 26,
               "n": 2
             }
           ],
@@ -7350,21 +7541,21 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 27,
+          "level": 29,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 26,
+              "lv": 28,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 26,
+              "lv": 28,
               "n": 2
             }
           ],
@@ -7382,8 +7573,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7466,15 +7657,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 24,
+          "level": 26,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 24
+              "lv": 26
             },
             {
               "kind": "shade",
-              "lv": 23,
+              "lv": 25,
               "n": 2
             }
           ],
@@ -7494,20 +7685,20 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 27,
+          "level": 29,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 26
+              "lv": 28
             },
             {
               "kind": "shade",
-              "lv": 25,
+              "lv": 27,
               "n": 2
             }
           ],
@@ -7525,8 +7716,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7609,16 +7800,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 26,
+          "level": 28,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 26,
+              "lv": 28,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 26,
+              "lv": 28,
               "n": 2
             }
           ],
@@ -7638,21 +7829,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 29,
+          "level": 31,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 28,
+              "lv": 30,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 28,
+              "lv": 30,
               "n": 2
             }
           ],
@@ -7670,8 +7861,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7754,15 +7945,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 26,
+          "level": 28,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 26
+              "lv": 28
             },
             {
               "kind": "shade",
-              "lv": 25,
+              "lv": 27,
               "n": 2
             }
           ],
@@ -7782,20 +7973,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 29,
+          "level": 31,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 28
+              "lv": 30
             },
             {
               "kind": "shade",
-              "lv": 27,
+              "lv": 29,
               "n": 2
             }
           ],
@@ -7813,8 +8004,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -7897,16 +8088,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 28,
+          "level": 30,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 28,
+              "lv": 30,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 28,
+              "lv": 30,
               "n": 2
             }
           ],
@@ -7926,21 +8117,21 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 31,
+          "level": 33,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 30,
+              "lv": 32,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 30,
+              "lv": 32,
               "n": 2
             }
           ],
@@ -7958,8 +8149,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8042,15 +8233,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 28,
+          "level": 30,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 28
+              "lv": 30
             },
             {
               "kind": "shade",
-              "lv": 27,
+              "lv": 29,
               "n": 2
             }
           ],
@@ -8070,20 +8261,20 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 31,
+          "level": 33,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 30
+              "lv": 32
             },
             {
               "kind": "shade",
-              "lv": 29,
+              "lv": 31,
               "n": 2
             }
           ],
@@ -8101,8 +8292,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8185,16 +8376,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 30,
+          "level": 32,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 30,
+              "lv": 32,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 30,
+              "lv": 32,
               "n": 2
             }
           ],
@@ -8214,21 +8405,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 33,
+          "level": 35,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 32,
+              "lv": 34,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 32,
+              "lv": 34,
               "n": 2
             }
           ],
@@ -8246,8 +8437,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8330,15 +8521,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 30,
+          "level": 32,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 30
+              "lv": 32
             },
             {
               "kind": "shade",
-              "lv": 29,
+              "lv": 31,
               "n": 2
             }
           ],
@@ -8358,20 +8549,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 33,
+          "level": 35,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 32
+              "lv": 34
             },
             {
               "kind": "shade",
-              "lv": 31,
+              "lv": 33,
               "n": 2
             }
           ],
@@ -8389,8 +8580,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8447,12 +8638,12 @@
             {
               "kind": "shade",
               "lv": 7,
-              "n": 3
+              "n": 2
             },
             {
               "kind": "thorn",
               "lv": 7,
-              "n": 2
+              "n": 1
             }
           ],
           "rewards": {
@@ -8475,21 +8666,21 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 8,
+          "level": 10,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 9
+              "lv": 11
             },
             {
               "kind": "shade",
-              "lv": 8,
-              "n": 3
+              "lv": 10,
+              "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 8,
-              "n": 2
+              "lv": 10,
+              "n": 1
             }
           ],
           "rewards": {
@@ -8507,26 +8698,26 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 11,
+          "level": 13,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 11
+              "lv": 13
             },
             {
               "kind": "shade",
-              "lv": 10,
-              "n": 3
+              "lv": 12,
+              "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 10,
-              "n": 2
+              "lv": 12,
+              "n": 1
             }
           ],
           "rewards": {
@@ -8542,8 +8733,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8624,16 +8815,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 8,
+          "level": 10,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 8,
+              "lv": 10,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 7,
+              "lv": 9,
               "n": 2
             }
           ],
@@ -8652,21 +8843,21 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 11,
+          "level": 13,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 10,
+              "lv": 12,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 9,
+              "lv": 11,
               "n": 2
             }
           ],
@@ -8683,8 +8874,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8767,16 +8958,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
+          "level": 24,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 21,
+              "lv": 23,
               "n": 3
             },
             {
               "kind": "membrane",
-              "lv": 22,
+              "lv": 24,
               "n": 2
             }
           ],
@@ -8796,21 +8987,21 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 25,
+          "level": 27,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 23,
+              "lv": 25,
               "n": 3
             },
             {
               "kind": "membrane",
-              "lv": 24,
+              "lv": 26,
               "n": 2
             }
           ],
@@ -8828,8 +9019,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -8912,15 +9103,15 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
+          "level": 24,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 23
+              "lv": 25
             },
             {
               "kind": "shade",
-              "lv": 21,
+              "lv": 23,
               "n": 3
             }
           ],
@@ -8940,20 +9131,20 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 25,
+          "level": 27,
           "enemies": [
             {
               "kind": "boss",
-              "lv": 25
+              "lv": 27
             },
             {
               "kind": "shade",
-              "lv": 23,
+              "lv": 25,
               "n": 3
             }
           ],
@@ -8971,8 +9162,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9066,50 +9257,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 34,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 36
-            },
-            {
-              "kind": "membrane",
-              "lv": 32,
-              "n": 2
-            },
-            {
-              "kind": "shade",
-              "lv": 32,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 32,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 37,
+          "level": 36,
           "enemies": [
             {
               "kind": "boss",
@@ -9134,6 +9282,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 39,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 40
+            },
+            {
+              "kind": "membrane",
+              "lv": 36,
+              "n": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 36,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 36,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -9145,8 +9336,541 @@
             "m_dust": 4,
             "m_violet": 3
           },
+          "hpScale": 1.3,
+          "atkScale": 1.18,
+          "rewardScale": 1.5
+        }
+      }
+    },
+    {
+      "id": "camp_port",
+      "title": "港の黒い旗",
+      "act": "第一幕",
+      "description": "船着き場の桟橋に、黒い旗が立てられた。桟橋の先の本陣には青のマリナ、丘の旗には藍のシオン。旗を一本ずつ取り返し、本陣の旗を奪う。",
+      "group": "main",
+      "postgame": false,
+      "boss": false,
+      "guardian": null,
+      "gate": null,
+      "requiredCompanions": [],
+      "bossHP": 1,
+      "bossShield": false,
+      "hardOnly": false,
+      "board": {
+        "rows": 11,
+        "cols": 13
+      },
+      "beacons": 0,
+      "spStart": 4,
+      "firstGold": 200,
+      "missionGuide": null,
+      "missions": [
+        {
+          "type": "turns",
+          "n": 10
+        },
+        {
+          "type": "hp",
+          "n": 50
+        },
+        {
+          "type": "rainbow",
+          "n": 40
+        }
+      ],
+      "companionsByStory": false,
+      "spirits": [],
+      "tiers": {
+        "gentle": {
+          "level": 2,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 2
+            },
+            {
+              "kind": "s_lance",
+              "lv": 1,
+              "n": 2
+            },
+            {
+              "kind": "s_bow",
+              "lv": 1,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 1,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 1,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 2,
+            "m_violet": 1
+          },
+          "hpScale": 0.85,
+          "atkScale": 1,
+          "rewardScale": 0.8
+        },
+        "normal": {
+          "level": 5,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 5
+            },
+            {
+              "kind": "s_lance",
+              "lv": 4,
+              "n": 2
+            },
+            {
+              "kind": "s_bow",
+              "lv": 4,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 4,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
           "hpScale": 1.15,
           "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 8,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 7
+            },
+            {
+              "kind": "s_lance",
+              "lv": 6,
+              "n": 2
+            },
+            {
+              "kind": "s_bow",
+              "lv": 6,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 6,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1,
+              "i_ward": 1
+            },
+            "sEquipment": "a_rain",
+            "sItems": {},
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 4,
+            "m_violet": 3
+          },
+          "hpScale": 1.3,
+          "atkScale": 1.18,
+          "rewardScale": 1.5
+        }
+      }
+    },
+    {
+      "id": "camp_valley",
+      "title": "石の子の村の旗",
+      "act": "第四幕",
+      "description": "石の子の村の屋根に、黒い旗が立っている。上の段の本陣には黄のオーカー、左の段の旗には橙のアンバー。旗を取り返して指揮点を増やし、本陣を奪う。",
+      "group": "main",
+      "postgame": false,
+      "boss": false,
+      "guardian": null,
+      "gate": null,
+      "requiredCompanions": [],
+      "bossHP": 1,
+      "bossShield": false,
+      "hardOnly": false,
+      "board": {
+        "rows": 12,
+        "cols": 13
+      },
+      "beacons": 0,
+      "spStart": 4,
+      "firstGold": 380,
+      "missionGuide": null,
+      "missions": [
+        {
+          "type": "turns",
+          "n": 12
+        },
+        {
+          "type": "noDown"
+        },
+        {
+          "type": "rainbow",
+          "n": 45
+        }
+      ],
+      "companionsByStory": false,
+      "spirits": [
+        "gran",
+        "ivy"
+      ],
+      "tiers": {
+        "gentle": {
+          "level": 7,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 8
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 7,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 7,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_lance",
+              "lv": 7,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 1,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 2,
+            "m_violet": 1
+          },
+          "hpScale": 0.85,
+          "atkScale": 1,
+          "rewardScale": 0.8
+        },
+        "normal": {
+          "level": 10,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 11
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 10,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 10,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_lance",
+              "lv": 10,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 13,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 13
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 12,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 12,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_lance",
+              "lv": 12,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1,
+              "i_ward": 1
+            },
+            "sEquipment": "a_gold",
+            "sItems": {},
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 4,
+            "m_violet": 3
+          },
+          "hpScale": 1.3,
+          "atkScale": 1.18,
+          "rewardScale": 1.5
+        }
+      }
+    },
+    {
+      "id": "camp_town",
+      "title": "城下町の黒い旗",
+      "act": "第五幕",
+      "description": "広場から城門まで、黒い旗が並んでいる。城門には近衛の長、紫のヴィオラ。左右の通りの旗には赤のカーマインと緑のヴェルデ。騎兵は本陣を狙ってくる。",
+      "group": "main",
+      "postgame": false,
+      "boss": false,
+      "guardian": null,
+      "gate": null,
+      "requiredCompanions": [],
+      "bossHP": 1,
+      "bossShield": false,
+      "hardOnly": false,
+      "board": {
+        "rows": 12,
+        "cols": 13
+      },
+      "beacons": 0,
+      "spStart": 4,
+      "firstGold": 480,
+      "missionGuide": null,
+      "missions": [
+        {
+          "type": "turns",
+          "n": 12
+        },
+        {
+          "type": "noDown"
+        },
+        {
+          "type": "rainbow",
+          "n": 50
+        }
+      ],
+      "companionsByStory": false,
+      "spirits": [
+        "gran",
+        "ivy",
+        "spinel"
+      ],
+      "tiers": {
+        "gentle": {
+          "level": 10,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 11
+            },
+            {
+              "kind": "s_cavalry",
+              "lv": 9,
+              "n": 1
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 9,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 9,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 9,
+              "n": 1,
+              "hold": true
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 1,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 2,
+            "m_violet": 1
+          },
+          "hpScale": 0.85,
+          "atkScale": 1,
+          "rewardScale": 0.8
+        },
+        "normal": {
+          "level": 13,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 14
+            },
+            {
+              "kind": "s_cavalry",
+              "lv": 12,
+              "n": 1
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 12,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 12,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 12,
+              "n": 1,
+              "hold": true
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 16,
+          "enemies": [
+            {
+              "kind": "s_captain",
+              "lv": 16
+            },
+            {
+              "kind": "s_cavalry",
+              "lv": 14,
+              "n": 1
+            },
+            {
+              "kind": "s_heavy",
+              "lv": 14,
+              "n": 1,
+              "hold": true
+            },
+            {
+              "kind": "s_bow",
+              "lv": 14,
+              "n": 2,
+              "hold": true
+            },
+            {
+              "kind": "s_sword",
+              "lv": 14,
+              "n": 1,
+              "hold": true
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_tea": 1,
+              "i_ward": 1
+            },
+            "sEquipment": "e_prism",
+            "sItems": {},
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 4,
+            "m_violet": 3
+          },
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9223,16 +9947,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 4,
+          "level": 6,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 4,
+              "lv": 6,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 4,
+              "lv": 6,
               "n": 2
             }
           ],
@@ -9251,21 +9975,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 7,
+          "level": 9,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 6,
+              "lv": 8,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 6,
+              "lv": 8,
               "n": 2
             }
           ],
@@ -9282,8 +10006,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9366,21 +10090,21 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 11,
+          "level": 13,
           "enemies": [
             {
               "kind": "thorn",
-              "lv": 11,
+              "lv": 13,
               "n": 3
             },
             {
               "kind": "shade",
-              "lv": 11,
+              "lv": 13,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 11,
+              "lv": 13,
               "n": 1
             }
           ],
@@ -9399,26 +10123,26 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "thorn",
-              "lv": 13,
+              "lv": 15,
               "n": 3
             },
             {
               "kind": "shade",
-              "lv": 13,
+              "lv": 15,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 13,
+              "lv": 15,
               "n": 1
             }
           ],
@@ -9435,8 +10159,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9524,50 +10248,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 15,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 17,
-              "armor": 2
-            },
-            {
-              "kind": "shade",
-              "lv": 15,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 15,
-              "n": 1
-            },
-            {
-              "kind": "thorn",
-              "lv": 15,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 18,
+          "level": 17,
           "enemies": [
             {
               "kind": "boss",
@@ -9592,6 +10273,49 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 20,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 21,
+              "armor": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 19,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 19,
+              "n": 1
+            },
+            {
+              "kind": "thorn",
+              "lv": 19,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -9603,8 +10327,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9692,50 +10416,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 24,
-              "armor": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 22,
-              "n": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 22,
-              "n": 2
-            },
-            {
-              "kind": "shade",
-              "lv": 22,
-              "n": 3
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_tea": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 25,
+          "level": 24,
           "enemies": [
             {
               "kind": "boss",
@@ -9760,6 +10441,49 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_tea": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 27,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 28,
+              "armor": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 26,
+              "n": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 26,
+              "n": 2
+            },
+            {
+              "kind": "shade",
+              "lv": 26,
+              "n": 3
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_tea": 1,
               "i_ward": 1
             },
@@ -9771,8 +10495,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9844,11 +10568,11 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 2,
+          "level": 4,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 2,
+              "lv": 4,
               "n": 3
             }
           ],
@@ -9867,16 +10591,16 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 5,
+          "level": 7,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 4,
+              "lv": 6,
               "n": 3
             }
           ],
@@ -9893,8 +10617,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -9972,16 +10696,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 4,
+          "level": 6,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 4,
+              "lv": 6,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 4
+              "lv": 6
             }
           ],
           "rewards": {
@@ -9999,21 +10723,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 7,
+          "level": 9,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 6,
+              "lv": 8,
               "n": 3
             },
             {
               "kind": "thorn",
-              "lv": 6
+              "lv": 8
             }
           ],
           "rewards": {
@@ -10029,8 +10753,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10109,16 +10833,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 5,
+          "level": 7,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 5,
+              "lv": 7,
               "n": 4
             },
             {
               "kind": "thorn",
-              "lv": 5
+              "lv": 7
             }
           ],
           "rewards": {
@@ -10136,21 +10860,21 @@
             "m_dust": 3,
             "m_teal": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 8,
+          "level": 10,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 7,
+              "lv": 9,
               "n": 4
             },
             {
               "kind": "thorn",
-              "lv": 7
+              "lv": 9
             }
           ],
           "rewards": {
@@ -10166,8 +10890,8 @@
             "m_dust": 4,
             "m_teal": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10244,16 +10968,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 6,
+          "level": 8,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 6,
+              "lv": 8,
               "n": 4
             },
             {
               "kind": "lead",
-              "lv": 5
+              "lv": 7
             }
           ],
           "rewards": {
@@ -10271,21 +10995,21 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 9,
+          "level": 11,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 8,
+              "lv": 10,
               "n": 4
             },
             {
               "kind": "lead",
-              "lv": 7
+              "lv": 9
             }
           ],
           "rewards": {
@@ -10301,8 +11025,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10349,17 +11073,17 @@
           "enemies": [
             {
               "kind": "boss",
-              "lv": 7
+              "lv": 5
             },
             {
               "kind": "shade",
-              "lv": 6,
+              "lv": 5,
               "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 6,
-              "n": 2
+              "lv": 5,
+              "n": 1
             }
           ],
           "rewards": {
@@ -10382,7 +11106,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 7,
+          "level": 9,
           "enemies": [
             {
               "kind": "boss",
@@ -10390,13 +11114,13 @@
             },
             {
               "kind": "shade",
-              "lv": 7,
+              "lv": 8,
               "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 7,
-              "n": 2
+              "lv": 8,
+              "n": 1
             }
           ],
           "rewards": {
@@ -10414,12 +11138,12 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 10,
+          "level": 12,
           "enemies": [
             {
               "kind": "boss",
@@ -10427,13 +11151,13 @@
             },
             {
               "kind": "shade",
-              "lv": 9,
+              "lv": 10,
               "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 9,
-              "n": 2
+              "lv": 10,
+              "n": 1
             }
           ],
           "rewards": {
@@ -10449,8 +11173,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10529,16 +11253,16 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 9,
+          "level": 11,
           "enemies": [
             {
               "kind": "thorn",
-              "lv": 9,
+              "lv": 11,
               "n": 3
             },
             {
               "kind": "shade",
-              "lv": 9,
+              "lv": 11,
               "n": 3
             }
           ],
@@ -10557,21 +11281,21 @@
             "m_dust": 3,
             "m_green": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 12,
+          "level": 14,
           "enemies": [
             {
               "kind": "thorn",
-              "lv": 11,
+              "lv": 13,
               "n": 3
             },
             {
               "kind": "shade",
-              "lv": 11,
+              "lv": 13,
               "n": 3
             }
           ],
@@ -10587,8 +11311,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10676,44 +11400,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 10,
-          "enemies": [
-            {
-              "kind": "thorn",
-              "lv": 10,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 10
-            },
-            {
-              "kind": "shade",
-              "lv": 10,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 2
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_green": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 13,
+          "level": 12,
           "enemies": [
             {
               "kind": "thorn",
@@ -10732,6 +11419,43 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_water": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_green": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 15,
+          "enemies": [
+            {
+              "kind": "thorn",
+              "lv": 14,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 14
+            },
+            {
+              "kind": "shade",
+              "lv": 14,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_water": 2,
               "i_ward": 1
             },
@@ -10743,8 +11467,8 @@
             "m_dust": 4,
             "m_green": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10827,45 +11551,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 12,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 13,
-              "armor": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 12,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 12,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_shard": 2
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_gold": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 15,
+          "level": 14,
           "enemies": [
             {
               "kind": "boss",
@@ -10885,6 +11571,44 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_shard": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_gold": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 17,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 17,
+              "armor": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 16,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 16,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_shard": 2,
               "i_ward": 1
             },
@@ -10896,8 +11620,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -10982,17 +11706,17 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 14,
+          "level": 16,
           "enemies": [
             {
               "kind": "lead",
-              "lv": 14,
+              "lv": 16,
               "n": 4,
               "armor": 3
             },
             {
               "kind": "thorn",
-              "lv": 14,
+              "lv": 16,
               "n": 2
             }
           ],
@@ -11011,22 +11735,22 @@
             "m_dust": 3,
             "m_gold": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 17,
+          "level": 19,
           "enemies": [
             {
               "kind": "lead",
-              "lv": 16,
+              "lv": 18,
               "n": 4,
               "armor": 3
             },
             {
               "kind": "thorn",
-              "lv": 16,
+              "lv": 18,
               "n": 2
             }
           ],
@@ -11042,8 +11766,8 @@
             "m_dust": 4,
             "m_gold": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11126,21 +11850,21 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 16,
+          "level": 18,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 16,
+              "lv": 18,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 16,
+              "lv": 18,
               "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 16,
+              "lv": 18,
               "n": 2
             }
           ],
@@ -11159,26 +11883,26 @@
             "m_dust": 3,
             "m_violet": 2
           },
-          "hpScale": 1,
-          "atkScale": 1,
+          "hpScale": 1.15,
+          "atkScale": 1.08,
           "rewardScale": 1
         },
         "hard": {
-          "level": 19,
+          "level": 21,
           "enemies": [
             {
               "kind": "shade",
-              "lv": 18,
+              "lv": 20,
               "n": 3
             },
             {
               "kind": "lead",
-              "lv": 18,
+              "lv": 20,
               "n": 2
             },
             {
               "kind": "thorn",
-              "lv": 18,
+              "lv": 20,
               "n": 2
             }
           ],
@@ -11195,8 +11919,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11280,45 +12004,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 18,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 20,
-              "armor": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 18,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 18,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 2
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 21,
+          "level": 20,
           "enemies": [
             {
               "kind": "boss",
@@ -11338,6 +12024,44 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_water": 2
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 23,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 24,
+              "armor": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 22,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 22,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_water": 2,
               "i_ward": 1
             },
@@ -11349,8 +12073,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11438,50 +12162,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 23,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 25,
-              "armor": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 23,
-              "n": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 23,
-              "n": 3
-            },
-            {
-              "kind": "shade",
-              "lv": 23,
-              "n": 2
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_shard": 3
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 26,
+          "level": 25,
           "enemies": [
             {
               "kind": "boss",
@@ -11506,6 +12187,49 @@
           ],
           "rewards": {
             "firstItems": {
+              "i_shard": 3
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 28,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 29,
+              "armor": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 27,
+              "n": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 27,
+              "n": 3
+            },
+            {
+              "kind": "shade",
+              "lv": 27,
+              "n": 2
+            }
+          ],
+          "rewards": {
+            "firstItems": {
               "i_shard": 3,
               "i_ward": 1
             },
@@ -11517,8 +12241,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11611,50 +12335,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 17,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 18
-            },
-            {
-              "kind": "shade",
-              "lv": 17,
-              "n": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 17,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 17,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 20,
+          "level": 19,
           "enemies": [
             {
               "kind": "boss",
@@ -11679,6 +12360,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 22,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 22
+            },
+            {
+              "kind": "shade",
+              "lv": 21,
+              "n": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 21,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 21,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -11690,8 +12414,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11785,50 +12509,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 18,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 19
-            },
-            {
-              "kind": "shade",
-              "lv": 18,
-              "n": 2
-            },
-            {
-              "kind": "thorn",
-              "lv": 18,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 18,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 21,
+          "level": 20,
           "enemies": [
             {
               "kind": "boss",
@@ -11853,6 +12534,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 23,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 23
+            },
+            {
+              "kind": "shade",
+              "lv": 22,
+              "n": 2
+            },
+            {
+              "kind": "thorn",
+              "lv": 22,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 22,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -11864,8 +12588,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -11958,50 +12682,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 19,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 20
-            },
-            {
-              "kind": "shade",
-              "lv": 19,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 19,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 19,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 22,
+          "level": 21,
           "enemies": [
             {
               "kind": "boss",
@@ -12026,6 +12707,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 24,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 24
+            },
+            {
+              "kind": "shade",
+              "lv": 23,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 23,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 23,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12037,8 +12761,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12131,50 +12855,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 20,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 21
-            },
-            {
-              "kind": "shade",
-              "lv": 20,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 20,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 20,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 23,
+          "level": 22,
           "enemies": [
             {
               "kind": "boss",
@@ -12199,6 +12880,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 25,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 25
+            },
+            {
+              "kind": "shade",
+              "lv": 24,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 24,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 24,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12210,8 +12934,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12305,50 +13029,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 21,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 22
-            },
-            {
-              "kind": "shade",
-              "lv": 21,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 21,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 21,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 24,
+          "level": 23,
           "enemies": [
             {
               "kind": "boss",
@@ -12373,6 +13054,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 26,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 26
+            },
+            {
+              "kind": "shade",
+              "lv": 25,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 25,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 25,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12384,8 +13108,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12479,50 +13203,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 22,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 23
-            },
-            {
-              "kind": "shade",
-              "lv": 22,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 22,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 22,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 25,
+          "level": 24,
           "enemies": [
             {
               "kind": "boss",
@@ -12547,6 +13228,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 27,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 27
+            },
+            {
+              "kind": "shade",
+              "lv": 26,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 26,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 26,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12558,8 +13282,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12652,50 +13376,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 23,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 24
-            },
-            {
-              "kind": "shade",
-              "lv": 23,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 23,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 23,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 26,
+          "level": 25,
           "enemies": [
             {
               "kind": "boss",
@@ -12720,6 +13401,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 28,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 28
+            },
+            {
+              "kind": "shade",
+              "lv": 27,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 27,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 27,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12731,8 +13455,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12826,50 +13550,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 25,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 26
-            },
-            {
-              "kind": "shade",
-              "lv": 25,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 25,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 25,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 28,
+          "level": 27,
           "enemies": [
             {
               "kind": "boss",
@@ -12894,6 +13575,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 30,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 30
+            },
+            {
+              "kind": "shade",
+              "lv": 29,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 29,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 29,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -12905,8 +13629,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -12999,50 +13723,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 25,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 26
-            },
-            {
-              "kind": "shade",
-              "lv": 25,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 25,
-              "n": 2
-            },
-            {
-              "kind": "lead",
-              "lv": 25,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 28,
+          "level": 27,
           "enemies": [
             {
               "kind": "boss",
@@ -13067,6 +13748,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 30,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 30
+            },
+            {
+              "kind": "shade",
+              "lv": 29,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 29,
+              "n": 2
+            },
+            {
+              "kind": "lead",
+              "lv": 29,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -13078,8 +13802,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13172,50 +13896,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 27,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 28
-            },
-            {
-              "kind": "shade",
-              "lv": 27,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 27,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 27,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 30,
+          "level": 29,
           "enemies": [
             {
               "kind": "boss",
@@ -13240,6 +13921,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 32,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 32
+            },
+            {
+              "kind": "shade",
+              "lv": 31,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 31,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 31,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -13251,8 +13975,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13346,50 +14070,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 28,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 29
-            },
-            {
-              "kind": "shade",
-              "lv": 28,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 28,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 28,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 31,
+          "level": 30,
           "enemies": [
             {
               "kind": "boss",
@@ -13414,6 +14095,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 33,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 33
+            },
+            {
+              "kind": "shade",
+              "lv": 32,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 32,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 32,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -13425,8 +14149,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13520,50 +14244,7 @@
           "rewardScale": 0.8
         },
         "normal": {
-          "level": 30,
-          "enemies": [
-            {
-              "kind": "boss",
-              "lv": 31
-            },
-            {
-              "kind": "shade",
-              "lv": 30,
-              "n": 3
-            },
-            {
-              "kind": "thorn",
-              "lv": 30,
-              "n": 3
-            },
-            {
-              "kind": "lead",
-              "lv": 30,
-              "n": 1
-            }
-          ],
-          "rewards": {
-            "firstItems": {
-              "i_water": 1,
-              "i_shard": 1
-            },
-            "sEquipment": null,
-            "sItems": {
-              "i_shard": 2,
-              "i_powder": 1
-            },
-            "unique": false
-          },
-          "materials": {
-            "m_dust": 3,
-            "m_violet": 2
-          },
-          "hpScale": 1,
-          "atkScale": 1,
-          "rewardScale": 1
-        },
-        "hard": {
-          "level": 33,
+          "level": 32,
           "enemies": [
             {
               "kind": "boss",
@@ -13588,6 +14269,49 @@
           "rewards": {
             "firstItems": {
               "i_water": 1,
+              "i_shard": 1
+            },
+            "sEquipment": null,
+            "sItems": {
+              "i_shard": 2,
+              "i_powder": 1
+            },
+            "unique": false
+          },
+          "materials": {
+            "m_dust": 3,
+            "m_violet": 2
+          },
+          "hpScale": 1.15,
+          "atkScale": 1.08,
+          "rewardScale": 1
+        },
+        "hard": {
+          "level": 35,
+          "enemies": [
+            {
+              "kind": "boss",
+              "lv": 35
+            },
+            {
+              "kind": "shade",
+              "lv": 34,
+              "n": 3
+            },
+            {
+              "kind": "thorn",
+              "lv": 34,
+              "n": 3
+            },
+            {
+              "kind": "lead",
+              "lv": 34,
+              "n": 1
+            }
+          ],
+          "rewards": {
+            "firstItems": {
+              "i_water": 1,
               "i_shard": 1,
               "i_ward": 1
             },
@@ -13599,8 +14323,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13686,8 +14410,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13773,8 +14497,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13860,8 +14584,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -13947,8 +14671,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -14034,8 +14758,8 @@
             "m_dust": 4,
             "m_violet": 3
           },
-          "hpScale": 1.15,
-          "atkScale": 1.08,
+          "hpScale": 1.3,
+          "atkScale": 1.18,
           "rewardScale": 1.5
         }
       }
@@ -16118,7 +16842,8 @@
       "desc": "攻撃+26・会心+5%",
       "sources": [
         "gp_king",
-        "gp_nephra"
+        "gp_nephra",
+        "camp_town"
       ],
       "shops": [
         "rainbow"
@@ -16135,6 +16860,7 @@
       },
       "desc": "守り+4・HP+10",
       "sources": [
+        "camp_port",
         "f_mist",
         "q_lantern"
       ],
@@ -16190,6 +16916,7 @@
       "desc": "守り+18・HP+60",
       "sources": [
         "gp_spinel",
+        "camp_valley",
         "q_gold"
       ],
       "shops": [
@@ -17464,21 +18191,21 @@
     },
     "normal": {
       "name": "ふつう",
-      "level": 0,
-      "enemyLevel": 0,
-      "hp": 1,
-      "atk": 1,
+      "level": 2,
+      "enemyLevel": 2,
+      "hp": 1.15,
+      "atk": 1.08,
       "reward": 1,
       "desc": "標準の敵と報酬"
     },
     "hard": {
       "name": "ハード",
-      "level": 3,
-      "enemyLevel": 2,
-      "hp": 1.15,
-      "atk": 1.08,
+      "level": 5,
+      "enemyLevel": 4,
+      "hp": 1.3,
+      "atk": 1.18,
       "reward": 1.5,
-      "desc": "敵が強くなる・しずく1.5倍・ボスSでユニーク／通常戦Sで通常装備"
+      "desc": "敵がさらに強くなる・しずく1.5倍・ボスSでユニーク／通常戦Sで通常装備"
     }
   },
   "mini": {
@@ -18335,12 +19062,167 @@
         1
       ],
       "h": 0.7
+    },
+    "s_lance": {
+      "hp": [
+        26,
+        6
+      ],
+      "atk": [
+        10,
+        2.6
+      ],
+      "def": [
+        5,
+        1.6
+      ],
+      "mov": 4,
+      "jump": 1,
+      "rng": [
+        1,
+        1
+      ],
+      "h": 0.95
+    },
+    "s_sword": {
+      "hp": [
+        22,
+        5.5
+      ],
+      "atk": [
+        11,
+        2.7
+      ],
+      "def": [
+        4,
+        1.3
+      ],
+      "mov": 5,
+      "jump": 1,
+      "rng": [
+        1,
+        1
+      ],
+      "h": 0.95
+    },
+    "s_bow": {
+      "hp": [
+        18,
+        4.5
+      ],
+      "atk": [
+        10,
+        2.6
+      ],
+      "def": [
+        3,
+        1.1
+      ],
+      "mov": 4,
+      "jump": 1,
+      "rng": [
+        2,
+        3
+      ],
+      "h": 0.9
+    },
+    "s_heavy": {
+      "hp": [
+        32,
+        7
+      ],
+      "atk": [
+        10,
+        2.4
+      ],
+      "def": [
+        8,
+        2.4
+      ],
+      "mov": 3,
+      "jump": 1,
+      "rng": [
+        1,
+        1
+      ],
+      "armor": 2,
+      "h": 1.05
+    },
+    "s_cavalry": {
+      "hp": [
+        26,
+        6
+      ],
+      "atk": [
+        11,
+        2.7
+      ],
+      "def": [
+        5,
+        1.5
+      ],
+      "mov": 6,
+      "jump": 1,
+      "rng": [
+        1,
+        1
+      ],
+      "h": 1.05
+    },
+    "s_captain": {
+      "hp": [
+        50,
+        10
+      ],
+      "atk": [
+        13,
+        3
+      ],
+      "def": [
+        7,
+        2
+      ],
+      "mov": 4,
+      "jump": 1,
+      "rng": [
+        1,
+        2
+      ],
+      "h": 1.2
+    },
+    "villager": {
+      "hp": [
+        60,
+        9
+      ],
+      "atk": [
+        0,
+        0
+      ],
+      "def": [
+        7,
+        2
+      ],
+      "mov": 0,
+      "jump": 0,
+      "rng": [
+        1,
+        1
+      ],
+      "h": 0.85
     }
   },
   "kindNames": {
     "aria": "アリア",
     "chrome_human": "クロム",
     "noir": "ノアール",
+    "s_lance": "遣いの槍兵",
+    "s_sword": "遣いの剣兵",
+    "s_bow": "遣いの弓兵",
+    "s_heavy": "遣いの重装兵",
+    "s_cavalry": "遣いの騎兵",
+    "s_captain": "遣いの隊長",
+    "villager": "村の人",
     "shade": "穢れの影",
     "thorn": "茨の影",
     "lead": "鉛の殻",
